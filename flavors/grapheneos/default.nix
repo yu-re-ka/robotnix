@@ -28,10 +28,12 @@ in mkIf (config.flavor == "grapheneos") (mkMerge [
 
   source.dirs = lib.importJSON (./. + "/repo-${grapheneOSRelease}.json");
 
-  apv.enable = mkIf (elem config.deviceFamily phoneDeviceFamilies) (mkDefault true);
+  adevtool.enable = mkDefault true;
+  adevtool.stateFile = "${config.source.dirs."vendor/state".src}/${config.device}.json";
+  #apv.enable = mkIf (elem config.deviceFamily phoneDeviceFamilies) (mkDefault true);
   apv.buildID = mkDefault (
     if (elem config.device [ "crosshatch" "blueline" ]) then "SP1A.210812.016.C1"
-    else "SP2A.220405.003"
+    else "SP2A.220505.002"
   );
 
   # Not strictly necessary for me to set these, since I override the source.dirs above
@@ -87,6 +89,7 @@ in mkIf (config.flavor == "grapheneos") (mkMerge [
   # GrapheneOS. Unfortunately, Doing it this way means we don't cache apv
   # output across vanilla/grapheneos, even if they are otherwise identical.
   source.dirs."vendor/android-prepare-vendor".enable = false;
+  source.dirs."vendor/adevtool".enable = false;
   nixpkgs.overlays = [ (self: super: {
     android-prepare-vendor = super.android-prepare-vendor.overrideAttrs (_: {
       src = config.source.dirs."vendor/android-prepare-vendor".src;
@@ -98,6 +101,24 @@ in mkIf (config.flavor == "grapheneos") (mkMerge [
       passthru.evalTimeSrc = builtins.fetchTarball {
         url = "https://github.com/GrapheneOS/android-prepare-vendor/archive/${config.source.dirs."vendor/android-prepare-vendor".rev}.tar.gz";
         inherit (config.source.dirs."vendor/android-prepare-vendor") sha256;
+      };
+    });
+    adevtool = super.adevtool.overrideAttrs (_: let
+      pythonEnv = self.python.withPackages (pkgs: with pkgs; [
+        protobuf
+      ]);
+    in {
+      src = config.source.dirs."vendor/adevtool".src;
+
+      patches = [ ./radiofiles-unconditional.diff ];
+
+      postInstall = ''
+        sed -i '1i#!${pythonEnv}/bin/python' $out/libexec/adevtool/deps/adevtool/external/extract_android_ota_payload/extract_android_ota_payload.py
+      '';
+
+      passthru.evalTimeSrc = builtins.fetchTarball {
+        url = "https://github.com/GrapheneOS/adevtool/archive/${config.source.dirs."vendor/adevtool".rev}.tar.gz";
+        inherit (config.source.dirs."vendor/adevtool") sha256;
       };
     });
   }) ];

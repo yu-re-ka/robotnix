@@ -62,7 +62,9 @@ mkMerge [
     adevtool.stateFile = mkDefault adevtoolStateFileMap.${config.device};
     adevtool.sepolicySourceDirs = [
       "hardware/google/pixel-sepolicy"
-    ] ++ lib.optional (config.deviceFamily == "raviole") "device/google/gs101-sepolicy";
+    ] ++ lib.optional (config.deviceFamily == "raviole") "device/google/gs101-sepolicy"
+      ++ lib.optional (config.deviceFamily == "sunfish") "device/google/sunfish-sepolicy"
+      ++ lib.optional (config.deviceFamily == "redfin") "device/google/redbull-sepolicy";
 
     # Exclude all devices by default
     source.excludeGroups = mkDefault (lib.attrNames deviceMap);

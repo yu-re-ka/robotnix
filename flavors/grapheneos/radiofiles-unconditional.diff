@@ -1,0 +1,15 @@
+diff --git a/src/build/make.ts b/src/build/make.ts
+index 9d32fbf..1f8dab6 100644
+--- a/src/build/make.ts
++++ b/src/build/make.ts
+@@ -97,10 +97,8 @@ export function serializeModulesMakefile(mk: ModulesMakefile) {
+   let blocks = startBlocks()
+   blocks.push('LOCAL_PATH := $(call my-dir)', `ifeq ($(TARGET_DEVICE),${mk.device})`)
+ 
+-  if (mk.radioFiles != undefined) {
+   blocks.push(`RADIO_FILES := $(wildcard $(LOCAL_PATH)/firmware/*.img)
+ $(foreach f, $(notdir $(RADIO_FILES)),$(call add-radio-file,firmware/$(f)))`)
+-  }
+ 
+   if (mk.symlinks.length > 0) {
+     let mkdirCmds = new Set<string>()

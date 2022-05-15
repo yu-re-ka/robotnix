@@ -9,10 +9,12 @@ let
   cfg = config.adevtool;
 
   # This also emits patches for the sepolicy dirs.
-  # TODO: Actually use the patches
   vendor = pkgs.runCommand "adevtool-vendor" {
     outputs = [ "out" "sepolicyPatches" ];
   } ''
+    export HOME=$PWD
+    export TERM=dumb
+
     ${lib.concatStringsSep "\n" (map (sedir: ''
       set -x
       mkdir -p $(dirname ${sedir})
@@ -23,10 +25,15 @@ let
 
     ${pkgs.adevtool}/bin/adevtool \
       generate-all \
-      ${pkgs.adevtool.src}/config/pixel/${config.device}.yml \
+      ${pkgs.adevtool.src}/config/${config.device}.yml \
       -c ${cfg.stateFile} \
       -s ${config.build.apv.unpackedImg} \
       -a ${pkgs.robotnix.build-tools}/aapt2
+
+    ${pkgs.adevtool}/bin/adevtool \
+      ota-firmware \
+      ${pkgs.adevtool.src}/config/${config.device}.yml \
+      -f ${config.apv.ota}
 
     ${pkgs.adevtool}/bin/adevtool \
       fix-certs \
@@ -94,13 +101,20 @@ in {
     {
       source.dirs."vendor/google_devices".src = vendor;
     }
-    #{
-    #  source.dirs = lib.listToAttrs (map (name: {
-    #    inherit name;
-    #    value = {
-    #      patches = [ "${vendor.sepolicyPatches}/${name}.patch" ];
-    #    };
-    #  }) cfg.sepolicySourceDirs);
-    #}
+    {
+      source.dirs = lib.listToAttrs (map (name: {
+        inherit name;
+        value = {
+          unpackScript = lib.mkForce ''
+            mkdir -p ${config.source.dirs.${name}.relpath}
+            rmdir ${config.source.dirs.${name}.relpath}
+            cp --reflink=auto --no-preserve=ownership --no-dereference --preserve=links -r ${config.source.dirs.${name}.src} ${config.source.dirs.${name}.relpath}
+            chmod u+w -R ${config.source.dirs.${name}.relpath}
+            patch -p0 --no-backup-if-mismatch < ${vendor.sepolicyPatches}/${name}.patch
+            chmod u-w -R ${config.source.dirs.${name}.relpath}
+          '';
+        };
+      }) cfg.sepolicySourceDirs);
+    }
   ]);
 }
