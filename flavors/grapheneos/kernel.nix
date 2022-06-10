@@ -5,7 +5,7 @@ let
     mkIf mkMerge mkDefault;
 
   clangVersion = "r416183b";
-  postRedfin = lib.elem config.deviceFamily [ "redfin" "barbet" ];
+  postRedfin = lib.elem config.deviceFamily [ "redfin" "barbet" "raviole" ];
 
   dependencies = let
     fixupRepo = repoName: { buildInputs ? [], ... }@args: pkgs.stdenv.mkDerivation ({

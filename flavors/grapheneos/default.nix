@@ -10,7 +10,7 @@ let
   upstreamParams = import ./upstream-params.nix;
   grapheneOSRelease = "${config.apv.buildID}.${upstreamParams.buildNumber}";
 
-  phoneDeviceFamilies = [ "crosshatch" "bonito" "coral" "sunfish" "redfin" "barbet" ];
+  phoneDeviceFamilies = [ "crosshatch" "bonito" "coral" "sunfish" "redfin" "barbet" "raviole" ];
   supportedDeviceFamilies = phoneDeviceFamilies ++ [ "generic" ];
 
 in mkIf (config.flavor == "grapheneos") (mkMerge [
@@ -73,7 +73,7 @@ in mkIf (config.flavor == "grapheneos") (mkMerge [
   source.dirs."kernel/google/redbull".enable = false;
   source.dirs."kernel/google/barbet".enable = false;
 
-  kernel.enable = mkDefault (elem config.deviceFamily phoneDeviceFamilies);
+  kernel.enable = mkDefault ((elem config.deviceFamily phoneDeviceFamilies) && config.deviceFamily != "raviole");
 
   # Enable Vanadium (GraphaneOS's chromium fork).
   apps.vanadium.enable = mkDefault true;

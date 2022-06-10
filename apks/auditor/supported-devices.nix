@@ -11,4 +11,6 @@
   "bramble" # Pixel 4a (5G)
   "redfin" # Pixel 5
   "barbet" # Pixel 5a (5G)
+  "raven" # Pixel 6 Pro
+  "oriole" # Pixel 6
 ]
