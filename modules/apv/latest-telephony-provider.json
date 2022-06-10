@@ -1,9 +1,9 @@
 {
   "url": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider",
-  "rev": "95d8125d98896e17c6719d93d031ad878c88c5da",
-  "date": "2022-04-09T07:52:10+00:00",
-  "path": "/nix/store/j913rqzza0psc41dzr5gn6caifvqz7vb-TelephonyProvider",
-  "sha256": "0ranjgv62xjpcgl9sw04sapigcv9j9xarw6nanl4kfx7fiv4f32q",
+  "rev": "992ef1f6519b39de442f5eccbd4bf400105df753",
+  "date": "2022-05-12T10:56:53+00:00",
+  "path": "/nix/store/pplx9lnkw10l0a4wi1jvjwim5g7d3igb-TelephonyProvider",
+  "sha256": "1ij9x43i7qgv86aff6yizfhlmbwm0lsn7awcnq96d13qihi3d86c",
   "fetchLFS": false,
   "fetchSubmodules": false,
   "deepClone": false,

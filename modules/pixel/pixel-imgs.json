@@ -84,6 +84,18 @@
     "sha256": "3238ed95ed9822ac4f1b98aef7978f01300067d34adf521f60c23558a40d2068"
   },
   {
+    "device": "oriole",
+    "version": "12.1.0 (SQ3A.220605.009.A1, Jun 2022, Verizon)",
+    "url": "https://dl.google.com/dl/android/aosp/oriole-sq3a.220605.009.a1-factory-d9064c59.zip",
+    "sha256": "d9064c595c70c95b6fbea85607906a653bd1bbba0cfba5232a2be878ad3cfe31"
+  },
+  {
+    "device": "oriole",
+    "version": "12.1.0 (SQ3A.220605.009.B1, Jun 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/oriole-sq3a.220605.009.b1-factory-80f98167.zip",
+    "sha256": "80f981677f6e2aa8fa288b4c9cbb5717da785c172bda47cee12201366c418f78"
+  },
+  {
     "device": "raven",
     "version": "12.0.0 (SD1A.210817.015.A4, Oct 2021)",
     "url": "https://dl.google.com/dl/android/aosp/raven-sd1a.210817.015.a4-factory-bd6cb030.zip",
@@ -166,6 +178,18 @@
     "version": "12.1.0 (SP2A.220505.002, May 2022)",
     "url": "https://dl.google.com/dl/android/aosp/raven-sp2a.220505.002-factory-e1266508.zip",
     "sha256": "e12665088bb6f6aa4d1064e95daf6f2f47fcf4f1ca4e7e93dcb772651cefb3a1"
+  },
+  {
+    "device": "raven",
+    "version": "12.1.0 (SQ3A.220605.009.A1, Jun 2022, Verizon)",
+    "url": "https://dl.google.com/dl/android/aosp/raven-sq3a.220605.009.a1-factory-2b4b1d47.zip",
+    "sha256": "2b4b1d476a6e80fd9fe09ace45e8abbd654a4d4a6fc51d39f0fd76f5a2c6a024"
+  },
+  {
+    "device": "raven",
+    "version": "12.1.0 (SQ3A.220605.009.B1, Jun 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/raven-sq3a.220605.009.b1-factory-157e2284.zip",
+    "sha256": "157e22840d4d4fde9f90d7de3d6ba6930922e9376096040d68501d155c997cb2"
   },
   {
     "device": "barbet",
@@ -262,6 +286,12 @@
     "version": "12.1.0 (SP2A.220505.002, May 2022)",
     "url": "https://dl.google.com/dl/android/aosp/barbet-sp2a.220505.002-factory-78d755fd.zip",
     "sha256": "78d755fd9ee779f253c6058173b8b8a1334962ceb11762298280ef5fc1f1a5e3"
+  },
+  {
+    "device": "barbet",
+    "version": "12.1.0 (SQ3A.220605.009.A1, Jun 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/barbet-sq3a.220605.009.a1-factory-f7c6bb71.zip",
+    "sha256": "f7c6bb714e5e20a4fa59e5cc1568fd7d8064d21fbdf528eff141ecbb2c552f71"
   },
   {
     "device": "redfin",
@@ -492,6 +522,12 @@
     "sha256": "7fe11c779aa0cb9bb4d6e0d25dbccffc3dd528239329784f37db08ed2e8cbef0"
   },
   {
+    "device": "redfin",
+    "version": "12.1.0 (SQ3A.220605.009.A1, Jun 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/redfin-sq3a.220605.009.a1-factory-391bb7ac.zip",
+    "sha256": "391bb7ac33e8b8079d62347f6868f2d1e7b77e8655fadd01bde6edb0f341ef0d"
+  },
+  {
     "device": "bramble",
     "version": "11.0.0 (RD1A.200810.020, Oct 2020, AU &amp; JP carriers)",
     "url": "https://dl.google.com/dl/android/aosp/bramble-rd1a.200810.020-factory-97d5c03f.zip",
@@ -714,6 +750,12 @@
     "sha256": "dfbd855da5b31ce2d48582b07a3420943ddba6eb6652017903f3ebada0080a60"
   },
   {
+    "device": "bramble",
+    "version": "12.1.0 (SQ3A.220605.009.A1, Jun 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/bramble-sq3a.220605.009.a1-factory-b03e1e6c.zip",
+    "sha256": "b03e1e6c3abc988f0b34c6446e9af19cabe5699d23851ec60bdf93a758e8c9a6"
+  },
+  {
     "device": "sunfish",
     "version": "10.0.0 (QD4A.200317.024.A1, May 2020, JP carriers and Verizon)",
     "url": "https://dl.google.com/dl/android/aosp/sunfish-qd4a.200317.024.a1-factory-2e462cf3.zip",
@@ -898,6 +940,12 @@
     "version": "12.1.0 (SP2A.220505.002, May 2022)",
     "url": "https://dl.google.com/dl/android/aosp/sunfish-sp2a.220505.002-factory-2ca902f1.zip",
     "sha256": "2ca902f10574fa45806c598e8cf10584aa2dc3dd0fb1cf75882e50426187221c"
+  },
+  {
+    "device": "sunfish",
+    "version": "12.1.0 (SQ3A.220605.009.A1, Jun 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/sunfish-sq3a.220605.009.a1-factory-7d440084.zip",
+    "sha256": "7d440084e8672cab1f283bea308c69387883ab7af660de4cc018312f483d2daf"
   },
   {
     "device": "coral",
@@ -1200,6 +1248,12 @@
     "sha256": "165116a17ccc12e6b449fdc292c127484e7efc02ce6fdb6aa79234e115175e31"
   },
   {
+    "device": "coral",
+    "version": "12.1.0 (SQ3A.220605.009.A1, Jun 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/coral-sq3a.220605.009.a1-factory-c6d6ea9f.zip",
+    "sha256": "c6d6ea9f00bde8db03c19c50e601612e0bd189ffadd6391936684a96b0106646"
+  },
+  {
     "device": "flame",
     "version": "10.0.0 (QD1A.190821.007, Oct 2019)",
     "url": "https://dl.google.com/dl/android/aosp/flame-qd1a.190821.007-factory-04b0499d.zip",
@@ -1500,6 +1554,12 @@
     "sha256": "b1f5341d413756a24662144b7ea96a9a0918b4673db41d69af71da0df188ae1a"
   },
   {
+    "device": "flame",
+    "version": "12.1.0 (SQ3A.220605.009.A1, Jun 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/flame-sq3a.220605.009.a1-factory-6762fa66.zip",
+    "sha256": "6762fa669273093db63bc1b85f707c3a5f5112c42861d6bcd4fae93a9ae0eb50"
+  },
+  {
     "device": "bonito",
     "version": "9.0.0 (PD2A.190115.029, Mar 2019)",
     "url": "https://dl.google.com/dl/android/aosp/bonito-pd2a.190115.029-factory-aac5b874.zip",
@@ -1770,6 +1830,12 @@
     "sha256": "7586d75da37f0f610ca4c28d1aa52f43cff6a3717a2afd28a328de7ac668d81d"
   },
   {
+    "device": "bonito",
+    "version": "12.1.0 (SP2A.220505.006, May 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/bonito-sp2a.220505.006-factory-5adf2317.zip",
+    "sha256": "5adf23171f3efd561b8b9394d4e167e70e821d768ac6f753d0091996804ea37e"
+  },
+  {
     "device": "sargo",
     "version": "9.0.0 (PD2A.190115.029, Mar 2019)",
     "url": "https://dl.google.com/dl/android/aosp/sargo-pd2a.190115.029-factory-b05c97da.zip",
@@ -2038,6 +2104,12 @@
     "version": "12.1.0 (SP2A.220505.002, May 2022)",
     "url": "https://dl.google.com/dl/android/aosp/sargo-sp2a.220505.002-factory-f89f634a.zip",
     "sha256": "f89f634ad7bcdb201997ef51f8a260afcd5bb6769144490ba307539cfe96b672"
+  },
+  {
+    "device": "sargo",
+    "version": "12.1.0 (SP2A.220505.006, May 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/sargo-sp2a.220505.006-factory-978959e1.zip",
+    "sha256": "978959e1abaa1d39d2a26eafeebae69e90f6a82bcc214750f40e73bebed24767"
   },
   {
     "device": "crosshatch",
