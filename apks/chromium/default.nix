@@ -18,7 +18,7 @@
 , packageName ? "org.chromium.chrome"
 , webviewPackageName ? "com.android.webview"
 , trichromeLibraryPackageName ? "org.chromium.trichromelibrary"
-, version ? "100.0.4896.127"
+, version ? "103.0.5060.53"
 , versionCode ? null
 # Potential buildTargets:
 # chrome_modern_public_bundle + system_webview_apk
@@ -184,7 +184,8 @@ in stdenvNoCC.mkDerivation rec {
   postPatch = lib.optionalString (lib.versionAtLeast version "91") ''
     ( cd src
       # Required for patchShebangs (unsupported)
-      chmod -x third_party/webgpu-cts/src/tools/${lib.optionalString (lib.versionAtLeast version "96") "run_"}deno
+      chmod -x third_party/dawn/third_party/webgpu-cts/tools/run_deno
+      chmod -x third_party/webgpu-cts/src/tools/run_deno
     )
   ''
   # Work around missing library when building md5sum_bin and monochrome. TODO: Hack
