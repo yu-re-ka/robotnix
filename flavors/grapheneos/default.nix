@@ -106,7 +106,7 @@ in mkIf (config.flavor == "grapheneos") (mkMerge [
       };
     });
     adevtool = super.adevtool.overrideAttrs (_: let
-      pythonEnv = self.python.withPackages (pkgs: with pkgs; [
+      pythonEnv = self.python3.withPackages (pkgs: with pkgs; [
         protobuf
       ]);
     in {
