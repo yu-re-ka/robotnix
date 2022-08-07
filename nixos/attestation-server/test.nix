@@ -6,7 +6,7 @@
 import "${pkgs.path}/nixos/tests/make-test-python.nix" ({ pkgs, ... }: {
   name = "attestation-server";
 
-  machine = { ... }: {
+  nodes.machine = { ... }: {
     imports = [ ../default.nix ];
 
     services.attestation-server = {

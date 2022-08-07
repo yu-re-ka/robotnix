@@ -13,9 +13,9 @@
 let
   jdk = jdk17_headless;
   buildGradle = callPackage ./gradle-env.nix {
-    gradleGen = callPackage (pkgs.path + /pkgs/development/tools/build-managers/gradle) {
+    callPackage = x: opts: callPackage x (opts // {
       java = jdk;
-    };
+    });
   };
   supportedDevices = import ../../apks/auditor/supported-devices.nix;
 in
