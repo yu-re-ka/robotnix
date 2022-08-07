@@ -1,5 +1,35 @@
 [
   {
+    "device": "bluejay",
+    "version": "12.1.0 (SD2A.220601.001.A1, Jun 2022, JP carriers)",
+    "url": "https://dl.google.com/dl/android/aosp/bluejay-ota-sd2a.220601.001.a1-bacd4108.zip",
+    "sha256": "bacd4108518f9e6b0908030bca1f7410b71526854351c41f918078607d4b16c3"
+  },
+  {
+    "device": "bluejay",
+    "version": "12.1.0 (SD2A.220601.004, Jun 2022, Verizon, Verizon MVNOs)",
+    "url": "https://dl.google.com/dl/android/aosp/bluejay-ota-sd2a.220601.004-a53caf37.zip",
+    "sha256": "a53caf37f76731525ed1d809d48950d585713bb0475a027fe78b4e12fd7b0f53"
+  },
+  {
+    "device": "bluejay",
+    "version": "12.1.0 (SD2A.220601.002, Jun 2022, AT&amp;T, T-Mobile)",
+    "url": "https://dl.google.com/dl/android/aosp/bluejay-ota-sd2a.220601.002-344f1ec9.zip",
+    "sha256": "344f1ec90934dd99354b5b424038be78d82de81db9df01bb2d120e758018fc36"
+  },
+  {
+    "device": "bluejay",
+    "version": "12.1.0 (SD2A.220601.003, Jun 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/bluejay-ota-sd2a.220601.003-ddfde1f7.zip",
+    "sha256": "ddfde1f7edcdbb2b3de41d24f6c3f31587f836f387cab4cc6d16adee32bcab8a"
+  },
+  {
+    "device": "bluejay",
+    "version": "12.1.0 (SD2A.220601.002.B1, Jun 2022, T-Mobile)",
+    "url": "https://dl.google.com/dl/android/aosp/bluejay-ota-sd2a.220601.002.b1-4af4ae37.zip",
+    "sha256": "4af4ae37491c9349af5500a272dd3d1b256d738cc8dbc39411ea098c10f4b10d"
+  },
+  {
     "device": "oriole",
     "version": "12.0.0 (SD1A.210817.015.A4, Oct 2021)",
     "url": "https://dl.google.com/dl/android/aosp/oriole-ota-sd1a.210817.015.a4-19a77b62.zip",
@@ -114,6 +144,24 @@
     "sha256": "277fdab7d69ad98143cfa3468246821926317162fda83a43a9e0a57fc32f8acf"
   },
   {
+    "device": "oriole",
+    "version": "12.1.0 (SQ3A.220705.003.A3, Jul 2022, Verizon, Verizon MVNOs)",
+    "url": "https://dl.google.com/dl/android/aosp/oriole-ota-sq3a.220705.003.a3-df99bdd3.zip",
+    "sha256": "df99bdd3bab4104f98904c4a1546f942b359b784b7ad1de848c5d3a7c6931264"
+  },
+  {
+    "device": "oriole",
+    "version": "12.1.0 (SQ3A.220705.004.A1, Jul 2022, Softbank)",
+    "url": "https://dl.google.com/dl/android/aosp/oriole-ota-sq3a.220705.004.a1-13bec694.zip",
+    "sha256": "13bec694aaed9c83a05888b1957e01a5df300ba8d5b300a4ec9828711af57284"
+  },
+  {
+    "device": "oriole",
+    "version": "12.1.0 (SQ3A.220705.004, Jul 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/oriole-ota-sq3a.220705.004-cd7eb344.zip",
+    "sha256": "cd7eb34461a28ad8e5415a3cf53f8d5a37bece79e6d3aad13dc5fbd184283350"
+  },
+  {
     "device": "raven",
     "version": "12.0.0 (SD1A.210817.015.A4, Oct 2021)",
     "url": "https://dl.google.com/dl/android/aosp/raven-ota-sd1a.210817.015.a4-83028e9c.zip",
@@ -226,6 +274,24 @@
     "version": "12.1.0 (SQ3A.220705.003.A1, Jul 2022, Verizon, Verizon MVNOs)",
     "url": "https://dl.google.com/dl/android/aosp/raven-ota-sq3a.220705.003.a1-20816bd9.zip",
     "sha256": "20816bd9302b4a2332a54f6bfa1c4484c2ffea7ec7381134f2e77f0f4c67df90"
+  },
+  {
+    "device": "raven",
+    "version": "12.1.0 (SQ3A.220705.003.A3, Jul 2022, Verizon, Verizon MVNOs)",
+    "url": "https://dl.google.com/dl/android/aosp/raven-ota-sq3a.220705.003.a3-e1982416.zip",
+    "sha256": "e198241601183c98dc8ef809084b8339da387c45fbab865a3fb6f8c125fa247e"
+  },
+  {
+    "device": "raven",
+    "version": "12.1.0 (SQ3A.220705.004.A1, Jul 2022, Softbank)",
+    "url": "https://dl.google.com/dl/android/aosp/raven-ota-sq3a.220705.004.a1-9b86421e.zip",
+    "sha256": "9b86421e29092efb6aa56b0012bcd9ef55cf575207c6923fe93982f5c2468682"
+  },
+  {
+    "device": "raven",
+    "version": "12.1.0 (SQ3A.220705.004, Jul 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/raven-ota-sq3a.220705.004-d609581e.zip",
+    "sha256": "d609581eb926f38fe0067af966492f18b8d48c810840a96b3bc14778d7b20856"
   },
   {
     "device": "barbet",

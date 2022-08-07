@@ -34,7 +34,9 @@ in mkIf (config.flavor == "grapheneos") (mkMerge [
   apv.buildID = mkDefault (
     if (elem config.device [ "crosshatch" "blueline" ]) then "SP1A.210812.016.C2"
     else if (elem config.device [ "bonito" "sargo" ]) then "SP2A.220505.006"
-    else "SQ3A.220705.003.A1"
+    else if (elem config.device [ "bluejay" ]) then "SD2A.220601.004"
+    else if (elem config.device [ "coral" "flame" "sunfish" "bramble" "redfin" "barbet" ]) then "SQ3A.220705.003.A1"
+    else "SQ3A.220705.004"
   );
 
   # Not strictly necessary for me to set these, since I override the source.dirs above
