@@ -28,9 +28,8 @@ in mkIf (config.flavor == "grapheneos") (mkMerge [
 
   source.dirs = lib.importJSON (./. + "/repo-${grapheneOSRelease}.json");
 
-  adevtool.enable = mkDefault true;
+  adevtool.enable = mkIf (elem config.deviceFamily phoneDeviceFamilies) (mkDefault true);
   adevtool.stateFile = "${config.source.dirs."vendor/state".src}/${config.device}.json";
-  #apv.enable = mkIf (elem config.deviceFamily phoneDeviceFamilies) (mkDefault true);
   apv.buildID = mkDefault (
     if (elem config.device [ "crosshatch" "blueline" ]) then "SP1A.210812.016.C2"
     else if (elem config.device [ "bonito" "sargo" ]) then "SP2A.220505.006"
