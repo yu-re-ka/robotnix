@@ -90,7 +90,7 @@
         "src": "core/root.mk"
       }
     ],
-    "dateTime": 1659654869,
+    "dateTime": 1659697301,
     "groups": [
       "pdk"
     ],
@@ -120,9 +120,9 @@
         "src": "tools"
       }
     ],
-    "rev": "4e10ae20319cefcd9bb34166a1486075fe7eaa39",
-    "revisionExpr": "4e10ae20319cefcd9bb34166a1486075fe7eaa39",
-    "sha256": "0g477c78gjbzvlahdb699q647k68wkirzb5zibkq4i7d0842s80n",
+    "rev": "a2ce24f6a90f07e08a009e6ca6aea5eb07d133e2",
+    "revisionExpr": "a2ce24f6a90f07e08a009e6ca6aea5eb07d133e2",
+    "sha256": "0qnp7yv6d90flwjxpl630pdacfq49bs6kzblxakjg42sjf6kn18a",
     "url": "https://github.com/GrapheneOS/platform_build"
   },
   "build/pesto": {
@@ -6675,14 +6675,14 @@
     "url": "https://android.googlesource.com/platform/frameworks/av"
   },
   "frameworks/base": {
-    "dateTime": 1659654278,
+    "dateTime": 1660042791,
     "groups": [
       "pdk-cw-fs",
       "pdk-fs"
     ],
-    "rev": "6588c05dda523329a5534592e59720e74c01824c",
-    "revisionExpr": "6588c05dda523329a5534592e59720e74c01824c",
-    "sha256": "0n5hyf2r8l15sbms968802dbx5c8m4h7ckp394flz8i6qmhd25qa",
+    "rev": "625c3f447eb894b6feafba15a7fb33e396c6a6c2",
+    "revisionExpr": "625c3f447eb894b6feafba15a7fb33e396c6a6c2",
+    "sha256": "1pad9bf6753vwg8hdp1j98fsdyr5vw85sdnsy3f2jc02zmsxq13z",
     "url": "https://github.com/GrapheneOS/platform_frameworks_base"
   },
   "frameworks/compile/libbcc": {
@@ -8280,14 +8280,14 @@
     "url": "https://github.com/GrapheneOS/platform_packages_apps_Dialer"
   },
   "packages/apps/DocumentsUI": {
-    "dateTime": 1657235453,
+    "dateTime": 1660042219,
     "groups": [
       "pdk-cw-fs",
       "pdk-fs"
     ],
-    "rev": "88d81d49759f04758e11f76ae44b0ed5ff38be51",
-    "revisionExpr": "88d81d49759f04758e11f76ae44b0ed5ff38be51",
-    "sha256": "1q3nczx803dccbz1qv30y6pdji1dwaypfzl0b0ag65wfb72g4sc5",
+    "rev": "53fdfe4c94c5d535fb70ece976fc70e2fe1db7f0",
+    "revisionExpr": "53fdfe4c94c5d535fb70ece976fc70e2fe1db7f0",
+    "sha256": "097d28j91ijrd9x0j0zvfc936ykxh5ji1c88nbnpaj4g03v0pqjm",
     "url": "https://github.com/GrapheneOS/platform_packages_apps_DocumentsUI"
   },
   "packages/apps/EmergencyInfo": {
@@ -8319,13 +8319,13 @@
     "url": "https://github.com/GrapheneOS/platform_packages_apps_Gallery2"
   },
   "packages/apps/GmsCompat": {
-    "dateTime": 1657293618,
+    "dateTime": 1660042621,
     "groups": [
       "pdk-fs"
     ],
-    "rev": "c6aa70a76bbb3c140bdb41cbe58b9687f83da634",
-    "revisionExpr": "c6aa70a76bbb3c140bdb41cbe58b9687f83da634",
-    "sha256": "1ys79bg4n9rrwfmbswkcwpv8z1asrzz1b9jcw52p2ii5fldvzj40",
+    "rev": "bf715c395c967a7a486a50831bed4ed4edf303b7",
+    "revisionExpr": "bf715c395c967a7a486a50831bed4ed4edf303b7",
+    "sha256": "0rbiy8qvk8ryxm10h8wgiwfv37lbcix371qixc34q2z3n053ya5q",
     "url": "https://github.com/GrapheneOS/platform_packages_apps_GmsCompat"
   },
   "packages/apps/HTMLViewer": {
@@ -8960,14 +8960,14 @@
     "url": "https://android.googlesource.com/platform/packages/modules/Virtualization"
   },
   "packages/modules/Wifi": {
-    "dateTime": 1654576767,
+    "dateTime": 1660042207,
     "groups": [
       "pdk-cw-fs",
       "pdk-fs"
     ],
-    "rev": "ebbd3e73c6c460c95169200ca26779748e7abe38",
-    "revisionExpr": "ebbd3e73c6c460c95169200ca26779748e7abe38",
-    "sha256": "1figyg9j3fssfw8y4kvrg4vk7j7cpxzffbm4v6ilwa08fkinmgbp",
+    "rev": "9eca3d8d62376ae035ea5eaa950147c2e5dab370",
+    "revisionExpr": "9eca3d8d62376ae035ea5eaa950147c2e5dab370",
+    "sha256": "0plxpbj889dwazz37wvzncnlsr8q94zbw34w7m3s9ryakpk2bjda",
     "url": "https://github.com/GrapheneOS/platform_packages_modules_Wifi"
   },
   "packages/modules/adb": {

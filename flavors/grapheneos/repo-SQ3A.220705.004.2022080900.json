@@ -90,7 +90,7 @@
         "src": "core/root.mk"
       }
     ],
-    "dateTime": 1659654892,
+    "dateTime": 1659697301,
     "groups": [
       "pdk"
     ],
@@ -120,9 +120,9 @@
         "src": "tools"
       }
     ],
-    "rev": "c0de28619c8e4325bb7940881e820882fb63b7ed",
-    "revisionExpr": "c0de28619c8e4325bb7940881e820882fb63b7ed",
-    "sha256": "0jnivmqc23r71cfs9gq62ncfydzyf0j64g7q4jdzkfyj9r3l7q7c",
+    "rev": "a2ce24f6a90f07e08a009e6ca6aea5eb07d133e2",
+    "revisionExpr": "a2ce24f6a90f07e08a009e6ca6aea5eb07d133e2",
+    "sha256": "0qnp7yv6d90flwjxpl630pdacfq49bs6kzblxakjg42sjf6kn18a",
     "url": "https://github.com/GrapheneOS/platform_build"
   },
   "build/pesto": {
@@ -527,51 +527,6 @@
     "sha256": "1zafa3mqnfarpr0ga3gp0z2qrjyym5lb0p2bb41xfaflvb1q0ira",
     "url": "https://android.googlesource.com/device/google/bluejay-sepolicy"
   },
-  "device/google/blueline-kernel": {
-    "dateTime": 1659670062,
-    "groups": [
-      "crosshatch",
-      "device",
-      "generic_fs"
-    ],
-    "rev": "78aa0a8a80b7656b623a6841c574c6171b1f3a56",
-    "revisionExpr": "78aa0a8a80b7656b623a6841c574c6171b1f3a56",
-    "sha256": "0g2b8lq3hbn1inpic7grifj2m5qbpzjcqzd1jccxyjcl420vny0z",
-    "url": "https://github.com/GrapheneOS/device_google_blueline-kernel"
-  },
-  "device/google/bonito": {
-    "dateTime": 1654574789,
-    "groups": [
-      "bonito",
-      "device"
-    ],
-    "rev": "55bb51d01e9627aa9fc7a978fe783d05c88cabab",
-    "revisionExpr": "55bb51d01e9627aa9fc7a978fe783d05c88cabab",
-    "sha256": "1rxamiqhcnnm4s7ff0x4lcb2m0h4b34d7zq0mah71p6z6hpscngk",
-    "url": "https://github.com/GrapheneOS/device_google_bonito"
-  },
-  "device/google/bonito-kernel": {
-    "dateTime": 1659670803,
-    "groups": [
-      "bonito",
-      "device"
-    ],
-    "rev": "ab915ac954483073d8bd66e95ace9bcba1395b2a",
-    "revisionExpr": "ab915ac954483073d8bd66e95ace9bcba1395b2a",
-    "sha256": "18hh8svyc3zypq3jagrafcl5v5mk34gln89jjxkylfh5bs7xpgja",
-    "url": "https://github.com/GrapheneOS/device_google_bonito-kernel"
-  },
-  "device/google/bonito-sepolicy": {
-    "dateTime": 1654574791,
-    "groups": [
-      "bonito",
-      "device"
-    ],
-    "rev": "ad9f224748f9663a3c56a354090ba636e257e2e2",
-    "revisionExpr": "ad9f224748f9663a3c56a354090ba636e257e2e2",
-    "sha256": "1dfaxqzacj9x1phw76h1ncq3bk7rwzm5z324x99brpziqbpdq3ng",
-    "url": "https://github.com/GrapheneOS/device_google_bonito-sepolicy"
-  },
   "device/google/bramble": {
     "dateTime": 1654574793,
     "groups": [
@@ -651,42 +606,6 @@
     "revisionExpr": "fc1d1385a83354f61a5c24d52c9049fa9c61bfbe",
     "sha256": "1hy7v8raiyknjy1bam3skg0z32664zjq7vxwdg5wz3hhhgz2kdn4",
     "url": "https://github.com/GrapheneOS/device_google_coral-sepolicy"
-  },
-  "device/google/crosshatch": {
-    "dateTime": 1654574800,
-    "groups": [
-      "crosshatch",
-      "device",
-      "generic_fs"
-    ],
-    "rev": "179d0de7a2a44e689a743194164f6c0a53a1fa75",
-    "revisionExpr": "179d0de7a2a44e689a743194164f6c0a53a1fa75",
-    "sha256": "0lgsfyvn6nckx6ka7ki7x3ww49vfxz5k67p66s6msg76jnx2vcrw",
-    "url": "https://github.com/GrapheneOS/device_google_crosshatch"
-  },
-  "device/google/crosshatch-kernel": {
-    "dateTime": 1659670455,
-    "groups": [
-      "crosshatch",
-      "device",
-      "generic_fs"
-    ],
-    "rev": "f752d9a46a2744b508fc9118a6852915e2ca0018",
-    "revisionExpr": "f752d9a46a2744b508fc9118a6852915e2ca0018",
-    "sha256": "0g2b8lq3hbn1inpic7grifj2m5qbpzjcqzd1jccxyjcl420vny0z",
-    "url": "https://github.com/GrapheneOS/device_google_crosshatch-kernel"
-  },
-  "device/google/crosshatch-sepolicy": {
-    "dateTime": 1654574802,
-    "groups": [
-      "crosshatch",
-      "device",
-      "generic_fs"
-    ],
-    "rev": "a81e4171ee1a0515f4a588ff43316cebff5427a8",
-    "revisionExpr": "a81e4171ee1a0515f4a588ff43316cebff5427a8",
-    "sha256": "1pc39xgaav2pw0i6nxhmdi3cxjccdrga34v7d4s2vjq2dl510za2",
-    "url": "https://github.com/GrapheneOS/device_google_crosshatch-sepolicy"
   },
   "device/google/cuttlefish": {
     "dateTime": 1648256463,
@@ -2378,11 +2297,11 @@
     "url": "https://android.googlesource.com/platform/external/hamcrest"
   },
   "external/hardened_malloc": {
-    "dateTime": 1647054729,
+    "dateTime": 1647054553,
     "groups": [],
-    "rev": "0537fbb546866038d54b49cabeee8135be19f30f",
-    "revisionExpr": "0537fbb546866038d54b49cabeee8135be19f30f",
-    "sha256": "0s0qfp8z3rp816gj5zlahcl1s92scdlj80qld1shy5kn8l185i6r",
+    "rev": "0d6d63cbe7cb6326bb06e1161b680cb3229f25a0",
+    "revisionExpr": "0d6d63cbe7cb6326bb06e1161b680cb3229f25a0",
+    "sha256": "1npazsr1z6nvw2mnznbf4j8bq554486iaygsr9fv8mhvbrxyq8by",
     "url": "https://github.com/GrapheneOS/hardened_malloc"
   },
   "external/harfbuzz_ng": {
@@ -6756,14 +6675,14 @@
     "url": "https://android.googlesource.com/platform/frameworks/av"
   },
   "frameworks/base": {
-    "dateTime": 1659654278,
+    "dateTime": 1660042791,
     "groups": [
       "pdk-cw-fs",
       "pdk-fs"
     ],
-    "rev": "6588c05dda523329a5534592e59720e74c01824c",
-    "revisionExpr": "6588c05dda523329a5534592e59720e74c01824c",
-    "sha256": "0n5hyf2r8l15sbms968802dbx5c8m4h7ckp394flz8i6qmhd25qa",
+    "rev": "625c3f447eb894b6feafba15a7fb33e396c6a6c2",
+    "revisionExpr": "625c3f447eb894b6feafba15a7fb33e396c6a6c2",
+    "sha256": "1pad9bf6753vwg8hdp1j98fsdyr5vw85sdnsy3f2jc02zmsxq13z",
     "url": "https://github.com/GrapheneOS/platform_frameworks_base"
   },
   "frameworks/compile/libbcc": {
@@ -7847,15 +7766,6 @@
     "sha256": "0vxgbrv24ilym4fxvizlzmzyx80jxr8jmhyg4fkxs8m79p1lbwc9",
     "url": "https://github.com/GrapheneOS/kernel_google_coral"
   },
-  "kernel/google/crosshatch": {
-    "dateTime": 1659669410,
-    "fetchSubmodules": true,
-    "groups": [],
-    "rev": "a72d58f8504024b1348ba16bc96e4ddf6497f943",
-    "revisionExpr": "a72d58f8504024b1348ba16bc96e4ddf6497f943",
-    "sha256": "1z997jsqa6ym870zplz6b89msgrhqdxczf5hk0vh298x7ksmb998",
-    "url": "https://github.com/GrapheneOS/kernel_google_crosshatch"
-  },
   "kernel/google/redbull": {
     "dateTime": 1659669447,
     "fetchSubmodules": true,
@@ -8370,14 +8280,14 @@
     "url": "https://github.com/GrapheneOS/platform_packages_apps_Dialer"
   },
   "packages/apps/DocumentsUI": {
-    "dateTime": 1657235453,
+    "dateTime": 1660042219,
     "groups": [
       "pdk-cw-fs",
       "pdk-fs"
     ],
-    "rev": "88d81d49759f04758e11f76ae44b0ed5ff38be51",
-    "revisionExpr": "88d81d49759f04758e11f76ae44b0ed5ff38be51",
-    "sha256": "1q3nczx803dccbz1qv30y6pdji1dwaypfzl0b0ag65wfb72g4sc5",
+    "rev": "53fdfe4c94c5d535fb70ece976fc70e2fe1db7f0",
+    "revisionExpr": "53fdfe4c94c5d535fb70ece976fc70e2fe1db7f0",
+    "sha256": "097d28j91ijrd9x0j0zvfc936ykxh5ji1c88nbnpaj4g03v0pqjm",
     "url": "https://github.com/GrapheneOS/platform_packages_apps_DocumentsUI"
   },
   "packages/apps/EmergencyInfo": {
@@ -8409,13 +8319,13 @@
     "url": "https://github.com/GrapheneOS/platform_packages_apps_Gallery2"
   },
   "packages/apps/GmsCompat": {
-    "dateTime": 1657293618,
+    "dateTime": 1660042621,
     "groups": [
       "pdk-fs"
     ],
-    "rev": "c6aa70a76bbb3c140bdb41cbe58b9687f83da634",
-    "revisionExpr": "c6aa70a76bbb3c140bdb41cbe58b9687f83da634",
-    "sha256": "1ys79bg4n9rrwfmbswkcwpv8z1asrzz1b9jcw52p2ii5fldvzj40",
+    "rev": "bf715c395c967a7a486a50831bed4ed4edf303b7",
+    "revisionExpr": "bf715c395c967a7a486a50831bed4ed4edf303b7",
+    "sha256": "0rbiy8qvk8ryxm10h8wgiwfv37lbcix371qixc34q2z3n053ya5q",
     "url": "https://github.com/GrapheneOS/platform_packages_apps_GmsCompat"
   },
   "packages/apps/HTMLViewer": {
@@ -9050,14 +8960,14 @@
     "url": "https://android.googlesource.com/platform/packages/modules/Virtualization"
   },
   "packages/modules/Wifi": {
-    "dateTime": 1654576767,
+    "dateTime": 1660042207,
     "groups": [
       "pdk-cw-fs",
       "pdk-fs"
     ],
-    "rev": "ebbd3e73c6c460c95169200ca26779748e7abe38",
-    "revisionExpr": "ebbd3e73c6c460c95169200ca26779748e7abe38",
-    "sha256": "1figyg9j3fssfw8y4kvrg4vk7j7cpxzffbm4v6ilwa08fkinmgbp",
+    "rev": "9eca3d8d62376ae035ea5eaa950147c2e5dab370",
+    "revisionExpr": "9eca3d8d62376ae035ea5eaa950147c2e5dab370",
+    "sha256": "0plxpbj889dwazz37wvzncnlsr8q94zbw34w7m3s9ryakpk2bjda",
     "url": "https://github.com/GrapheneOS/platform_packages_modules_Wifi"
   },
   "packages/modules/adb": {
@@ -9936,11 +9846,11 @@
     "url": "https://android.googlesource.com/platform/prebuilts/vndk/v31"
   },
   "script": {
-    "dateTime": 1659655729,
+    "dateTime": 1659655716,
     "groups": [],
-    "rev": "846715610dddbd2f9f2712f1e4c9e6c7929fd4c1",
-    "revisionExpr": "846715610dddbd2f9f2712f1e4c9e6c7929fd4c1",
-    "sha256": "04iw0n0nh40gqb5s31vdg4m3a2zknvqv25qs82bcxynbplkkp8w8",
+    "rev": "41c713f1725dd6235281f00aa4d47aa3790c2da1",
+    "revisionExpr": "41c713f1725dd6235281f00aa4d47aa3790c2da1",
+    "sha256": "0jap4zlp5s5pc3qnxczlpm8mmwj69rcxnihsl8pdv1qqp7c11ss2",
     "url": "https://github.com/GrapheneOS/script"
   },
   "sdk": {
@@ -10965,14 +10875,6 @@
     "revisionExpr": "075e3bce342065a3ab7a898881df68d73c9cb914",
     "sha256": "1s5xks086r3i5fxli1qypljnljyhqfn5lyp631lkl9b0mpx9qkg2",
     "url": "https://github.com/GrapheneOS/adevtool"
-  },
-  "vendor/android-prepare-vendor": {
-    "dateTime": 1650308710,
-    "groups": [],
-    "rev": "73babe3397e5cb331dcef5cc7443118590430c4b",
-    "revisionExpr": "73babe3397e5cb331dcef5cc7443118590430c4b",
-    "sha256": "0s4hl6gy1d4nwh0y80syp45wnlmjfz9m312q69y7vnngjsldcc8q",
-    "url": "https://github.com/GrapheneOS/android-prepare-vendor"
   },
   "vendor/carriersettings-extractor": {
     "dateTime": 1651355890,
