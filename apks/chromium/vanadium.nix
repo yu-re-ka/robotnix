@@ -7,13 +7,13 @@ let
   vanadium_src = fetchFromGitHub {
     owner = "GrapheneOS";
     repo = "Vanadium";
-    rev = "SQ3A.220705.004.2022080500";
-    sha256 = "sha256-8ZbwY/1npFQ45hx04BS2GjoWacOrceDxdwPEc3mGqzc=";
+    rev = "SQ3A.220705.004.2022081600";
+    sha256 = "sha256-VzvwENJ7XIIRPcGZ5+6sYwWn5IzOThYvMGNq2V/nzZM=";
   };
 in (chromium.override {
   name = "vanadium";
   displayName = "Vanadium";
-  version = "104.0.5112.69";
+  version = "104.0.5112.97";
   enableRebranding = false; # Patches already include rebranding
   customGnFlags = {
     is_component_build = false;
@@ -41,6 +41,9 @@ in (chromium.override {
   postPatch = ''
     ( cd src
       for patchfile in ${vanadium_src}/patches/*.patch; do
+        if [ "$patchfile" == "${vanadium_src}/patches/0089-Update-to-Android-T-SDK.patch" ]; then
+          continue
+        fi
         ${git}/bin/git apply --unsafe-paths $patchfile
       done
     )
