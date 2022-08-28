@@ -121,12 +121,13 @@ def make_vendor_file(chromium_version, target_os):
         subprocess.check_call(["git", "checkout", "FETCH_HEAD"], cwd=src_dir)
     else:
         # restore topdir into virgin state
-        if ("tag '%s' of" % chromium_version) in open(os.path.join(src_dir, ".git/FETCH_HEAD")).read():
-            print("already at", chromium_version)
-        else:
-            print('git fetch --progress --depth 1 origin "+%s"' % chromium_version)
-            subprocess.check_call(["git", "fetch", "--progress", "--depth", "1", "origin", "+%s" % chromium_version], cwd=src_dir)
-            subprocess.check_call(["git", "checkout", "FETCH_HEAD"], cwd=src_dir)
+        print("already at", chromium_version)
+        #if ("tag '%s' of" % chromium_version) in open(os.path.join(src_dir, ".git/FETCH_HEAD")).read():
+        #    print("already at", chromium_version)
+        #else:
+        #    print('git fetch --progress --depth 1 origin "+%s"' % chromium_version)
+        #    subprocess.check_call(["git", "fetch", "--progress", "--depth", "1", "origin", "+%s" % chromium_version], cwd=src_dir)
+        #    subprocess.check_call(["git", "checkout", "FETCH_HEAD"], cwd=src_dir)
 
         # and remove all symlinks to subprojects, so their DEPS files won;t be included
         subprocess.check_call(["find", ".", "-name", ".gitignore", "-delete"], cwd=src_dir)
@@ -138,7 +139,7 @@ def make_vendor_file(chromium_version, target_os):
     while need_another_iteration:
         need_another_iteration = False
 
-        subprocess.check_call(["python3", "depot_tools/gclient.py", "config", "https://chromium.googlesource.com/chromium/src.git"], cwd=topdir)
+        subprocess.check_call(["python3", "depot_tools/gclient.py", "config", "--unmanaged", src_dir], cwd=topdir)
         flat = subprocess.check_output(["python3", "depot_tools/gclient.py", "flatten", "--pin-all-deps"], cwd=topdir).decode()
 
         content = gclient_eval.Parse(flat, filename='DEPS', vars_override={}, builtin_vars=builtin_vars)

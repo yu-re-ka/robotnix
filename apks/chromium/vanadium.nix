@@ -7,8 +7,8 @@ let
   vanadium_src = fetchFromGitHub {
     owner = "GrapheneOS";
     repo = "Vanadium";
-    rev = "SQ3A.220705.004.2022081600";
-    sha256 = "sha256-VzvwENJ7XIIRPcGZ5+6sYwWn5IzOThYvMGNq2V/nzZM=";
+    rev = "TP1A.220624.021.2022082300";
+    sha256 = "sha256-VU2E1j/QODmfYrjPGh3qR4BUiYKKFm1dfurNxtg2RAI=";
   };
 in (chromium.override {
   name = "vanadium";
@@ -41,9 +41,6 @@ in (chromium.override {
   postPatch = ''
     ( cd src
       for patchfile in ${vanadium_src}/patches/*.patch; do
-        if [ "$patchfile" == "${vanadium_src}/patches/0089-Update-to-Android-T-SDK.patch" ]; then
-          continue
-        fi
         ${git}/bin/git apply --unsafe-paths $patchfile
       done
     )

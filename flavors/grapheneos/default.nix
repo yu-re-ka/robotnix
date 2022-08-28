@@ -10,7 +10,7 @@ let
   upstreamParams = import ./upstream-params.nix;
   grapheneOSRelease = "${config.apv.buildID}.${upstreamParams.buildNumber}";
 
-  phoneDeviceFamilies = [ "crosshatch" "bonito" "coral" "sunfish" "redfin" "barbet" "raviole" ];
+  phoneDeviceFamilies = [ "coral" "sunfish" "redfin" "barbet" "raviole" ];
   supportedDeviceFamilies = phoneDeviceFamilies ++ [ "generic" ];
 
 in mkIf (config.flavor == "grapheneos") (mkMerge [
@@ -31,11 +31,9 @@ in mkIf (config.flavor == "grapheneos") (mkMerge [
   adevtool.enable = mkIf (elem config.deviceFamily phoneDeviceFamilies) (mkDefault true);
   adevtool.stateFile = "${config.source.dirs."vendor/state".src}/${config.device}.json";
   apv.buildID = mkDefault (
-    if (elem config.device [ "crosshatch" "blueline" ]) then "SP1A.210812.016.C2"
-    else if (elem config.device [ "bonito" "sargo" ]) then "SP2A.220505.006"
-    else if (elem config.device [ "bluejay" ]) then "SD2A.220601.004.B2"
-    else if (elem config.device [ "coral" "flame" "sunfish" "bramble" "redfin" "barbet" ]) then "SQ3A.220705.003.A1"
-    else "SQ3A.220705.004"
+    if (elem config.device [ "coral" "flame" "sunfish" "bramble" "redfin" "barbet" ]) then "TP1A.220624.014"
+    else if (elem config.device [ "raven" "oriole" ]) then "TP1A.220624.021"
+    else "TP1A.220624.021.A1"
   );
 
   # Not strictly necessary for me to set these, since I override the source.dirs above
@@ -44,16 +42,9 @@ in mkIf (config.flavor == "grapheneos") (mkMerge [
 
   warnings = (optional ((config.device != null) && !(elem config.deviceFamily supportedDeviceFamilies))
     "${config.device} is not a supported device for GrapheneOS")
-    ++ (optional (!(elem config.androidVersion [ 12 ])) "Unsupported androidVersion (!= 12) for GrapheneOS")
-    ++ (optional (config.deviceFamily == "crosshatch") "crosshatch/blueline are considered legacy devices and receive only extended support updates from GrapheneOS and no longer receive vendor updates from Google");
+    ++ (optional (!(elem config.androidVersion [ 13 ])) "Unsupported androidVersion (!= 13) for GrapheneOS");
 }
 {
-  # Upstream tag doesn't always set the BUILD_ID and platform security patch correctly for legacy crosshatch/blueline
-  source.dirs."build/make".postPatch = mkIf (elem config.device [ "crosshatch" "blueline" ]) ''
-    echo BUILD_ID=SP1A.210812.016.C1 > core/build_id.mk
-    sed -i 's/PLATFORM_SECURITY_PATCH := 2021-11-05/PLATFORM_SECURITY_PATCH := 2021-11-01/g' core/version_defaults.mk
-  '';
-
   # Disable setting SCHED_BATCH in soong. Brings in a new dependency and the nix-daemon could do that anyway.
   source.dirs."build/soong".patches = [
     (pkgs.fetchpatch {
@@ -73,7 +64,7 @@ in mkIf (config.flavor == "grapheneos") (mkMerge [
   source.dirs."kernel/google/redbull".enable = false;
   source.dirs."kernel/google/barbet".enable = false;
 
-  kernel.enable = mkDefault ((elem config.deviceFamily phoneDeviceFamilies) && config.deviceFamily != "raviole");
+  kernel.enable = false; #mkDefault (elem config.deviceFamily phoneDeviceFamilies);
 
   # Enable Vanadium (GraphaneOS's chromium fork).
   apps.vanadium.enable = mkDefault true;
@@ -111,8 +102,6 @@ in mkIf (config.flavor == "grapheneos") (mkMerge [
       ]);
     in {
       src = config.source.dirs."vendor/adevtool".src;
-
-      patches = [ ./radiofiles-unconditional.diff ];
 
       postInstall = ''
         sed -i '1i#!${pythonEnv}/bin/python' $out/libexec/adevtool/deps/adevtool/external/extract_android_ota_payload/extract_android_ota_payload.py

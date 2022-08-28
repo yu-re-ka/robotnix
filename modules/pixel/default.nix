@@ -69,7 +69,7 @@ mkMerge [
       ++ lib.optional (config.deviceFamily == "redfin") "device/google/redbull-sepolicy";
 
     # Exclude all devices by default
-    source.excludeGroups = mkDefault (lib.attrNames deviceMap);
+    source.excludeGroups = mkDefault (lib.attrNames deviceMap ++ lib.mapAttrsToList (name: device: device.family) deviceMap ++ [ "slider" ]);
     # But include names related to our device
     source.includeGroups = mkDefault [ config.device config.deviceFamily ];
 

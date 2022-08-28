@@ -9,11 +9,25 @@ let
   cfg = config.adevtool;
 
   # This also emits patches for the sepolicy dirs.
-  vendor = pkgs.runCommand "adevtool-vendor" {
+  vendor = pkgs.vmTools.runInLinuxVM (pkgs.runCommand "adevtool-vendor" {
+    nativeBuildInputs = [ pkgs.unzip pkgs.util-linux ];
     outputs = [ "out" "sepolicyPatches" ];
+    memSize = 1024;
+    preVM = ''
+      diskImage=nixos.raw
+      truncate -s 10G $diskImage
+      ${pkgs.e2fsprogs}/bin/mkfs.ext4 $diskImage
+    '';
   } ''
     export HOME=$PWD
     export TERM=dumb
+
+    ${pkgs.kmod}/bin/insmod ${pkgs.linux}/lib/modules/*/kernel/drivers/block/loop.ko.xz || true
+    ${pkgs.kmod}/bin/insmod ${pkgs.linux}/lib/modules/*/kernel/fs/ext2/ext2.ko.xz || true
+
+    mkdir tmp
+    mount /dev/vda tmp
+    cd tmp
 
     ${lib.concatStringsSep "\n" (map (sedir: ''
       set -x
@@ -27,7 +41,7 @@ let
       generate-all \
       ${pkgs.adevtool.src}/config/${config.device}.yml \
       -c ${cfg.stateFile} \
-      -s ${config.build.apv.unpackedImg} \
+      -s ${config.apv.img} \
       -a ${pkgs.robotnix.build-tools}/aapt2
 
     ${pkgs.adevtool}/bin/adevtool \
@@ -38,10 +52,10 @@ let
     ${pkgs.adevtool}/bin/adevtool \
       fix-certs \
       -d ${config.device} \
-      -s ${config.build.apv.unpackedImg} \
+      -s ${config.apv.img} \
       -p ${lib.concatStringsSep " " cfg.sepolicySourceDirs}
 
-    mv vendor/google_devices $out
+    mv vendor/google_devices/* $out
 
     ${builtins.concatStringsSep "\n" (map (sedir: ''
       echo -n "Generating patches for ${sedir}... "
@@ -64,7 +78,7 @@ let
       esac
       set -e
     '') cfg.sepolicySourceDirs)}
-  '';
+  '');
 in {
   options = {
     adevtool = {

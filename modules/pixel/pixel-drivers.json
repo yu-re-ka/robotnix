@@ -20,6 +20,22 @@
     "sha256": "b0ec56284375fd15e3a9f7ef7afd49291cd7be7f9824ac14d50e967f4c42700d"
   },
   {
+    "url": "https://dl.google.com/dl/android/aosp/google_devices-bluejay-sd2a.220601.001.b1-5866a9af.tgz",
+    "sha256": "843fdc534aff6e2037de5a149f5e7bddcb34b637c34f3b36ab8dda48b0ad90d4"
+  },
+  {
+    "url": "https://dl.google.com/dl/android/aosp/google_devices-bluejay-sd2a.220601.003.b1-94aa047e.tgz",
+    "sha256": "4518135b14bdb71f48520af1dd32fdafbb8eb683b35042e4037a6c2c401c56ce"
+  },
+  {
+    "url": "https://dl.google.com/dl/android/aosp/google_devices-bluejay-sd2a.220601.004.b2-13292478.tgz",
+    "sha256": "e7443b666e390e3ae7b874e69a57f552b09ca6214a45205a057dab1ddf611385"
+  },
+  {
+    "url": "https://dl.google.com/dl/android/aosp/google_devices-bluejay-tp1a.220624.021.a1-f3edb59a.tgz",
+    "sha256": "c60a6d735dfd093ab8be90149601aea07c16fcf5d594578382c515a2d5c07bf3"
+  },
+  {
     "url": "https://dl.google.com/dl/android/aosp/google_devices-oriole-sd1a.210817.015.a4-b4ec71a4.tgz",
     "sha256": "2201aeaab9df2c500f36bc2f6f960a9236db06747ceaf5e3aeb6ab3b6a7490d2"
   },
@@ -124,6 +140,14 @@
     "sha256": "63a758cbc42276c99dfe0b7952934b9fe7d85dbb4ab109a5d2d3b330bd18b506"
   },
   {
+    "url": "https://dl.google.com/dl/android/aosp/google_devices-oriole-sq3a.220705.001.b2-f0b4ace1.tgz",
+    "sha256": "2beeaafbc81792664136549852e1bec2e6c93404d74b0765e4d06f267664f708"
+  },
+  {
+    "url": "https://dl.google.com/dl/android/aosp/google_devices-oriole-tp1a.220624.021-a4c4e70d.tgz",
+    "sha256": "bb8158e404cfa888825d219e8e5d58255d0f7df09061672faab9567be19c8d99"
+  },
+  {
     "url": "https://dl.google.com/dl/android/aosp/google_devices-raven-sd1a.210817.015.a4-31a5656a.tgz",
     "sha256": "4267914736943b542103ee037b872084fce71b06f90c3f638cd7aca7d009abb4"
   },
@@ -226,6 +250,14 @@
   {
     "url": "https://dl.google.com/dl/android/aosp/google_devices-raven-sq3a.220705.004-6f0d720b.tgz",
     "sha256": "a2974d0f2ba5e090b369d59ad0fe90f0a211568c4154ac0a81ca3a39f2c93571"
+  },
+  {
+    "url": "https://dl.google.com/dl/android/aosp/google_devices-raven-sq3a.220705.001.b2-ceba424f.tgz",
+    "sha256": "fffbc65254538fa8cc6cd33358349a126f0c0e20b1cb904d483154a85daa7b4d"
+  },
+  {
+    "url": "https://dl.google.com/dl/android/aosp/google_devices-raven-tp1a.220624.021-e3aebf91.tgz",
+    "sha256": "87437b2cfb61d0728eed73c833de1562fc41afde1964eb397b0c06b088670fc4"
   },
   {
     "url": "https://dl.google.com/dl/android/aosp/google_devices-barbet-rd2a.210605.006-22c86344.tgz",
@@ -370,6 +402,14 @@
   {
     "url": "https://dl.google.com/dl/android/aosp/qcom-barbet-sq3a.220705.003.a1-81ed51b4.tgz",
     "sha256": "9cbaf08c8696b21762cbf95007b7ecc0c7e9a4e82dd2a35cd01faebf361f1b8b"
+  },
+  {
+    "url": "https://dl.google.com/dl/android/aosp/google_devices-barbet-tp1a.220624.014-9970d988.tgz",
+    "sha256": "741aa49413a08e9cc63b82c8e91384078c0f9cca633f5b35ace449ef2b9cf61c"
+  },
+  {
+    "url": "https://dl.google.com/dl/android/aosp/qcom-barbet-tp1a.220624.014-62d175d7.tgz",
+    "sha256": "f4cf7d3d382b841e3b1924cf12fda3fc8d6d56f09211a73f2d970cf3e23a338a"
   },
   {
     "url": "https://dl.google.com/dl/android/aosp/google_devices-redfin-rd1a.200810.020-3940ace1.tgz",
@@ -690,6 +730,14 @@
   {
     "url": "https://dl.google.com/dl/android/aosp/qcom-redfin-sq3a.220705.003.a1-8e4438cf.tgz",
     "sha256": "2ea29606d7eba498cf1c0b712e44dfe9dc5f2c4a1206c0997d05b62453465d69"
+  },
+  {
+    "url": "https://dl.google.com/dl/android/aosp/google_devices-redfin-tp1a.220624.014-ff9a8cc0.tgz",
+    "sha256": "dac706656d099a5fc0ab672276b8845af4fe6ffa472543b189286e5efbcad1b4"
+  },
+  {
+    "url": "https://dl.google.com/dl/android/aosp/qcom-redfin-tp1a.220624.014-41d66d5a.tgz",
+    "sha256": "3e40f81ca62c916663d0b4b597b688fb2324239c3e0c4b2587a5471810307477"
   },
   {
     "url": "https://dl.google.com/dl/android/aosp/google_devices-bramble-rd1a.200810.020-f048d12c.tgz",
@@ -1028,6 +1076,14 @@
     "sha256": "cf5496f01af73489fc0ce1c42a039a290801a32b14162eb0478e40f1d7ca0525"
   },
   {
+    "url": "https://dl.google.com/dl/android/aosp/google_devices-bramble-tp1a.220624.014-48bc6528.tgz",
+    "sha256": "9fe931c2c09d656c25ea07a8b44e1c87cdbba702b12e4306040362df80607452"
+  },
+  {
+    "url": "https://dl.google.com/dl/android/aosp/qcom-bramble-tp1a.220624.014-c4dad827.tgz",
+    "sha256": "adb6a143b8bda571b9d6f3a00cfd93b497d8e06d40d72620778110d17ea36494"
+  },
+  {
     "url": "https://dl.google.com/dl/android/aosp/google_devices-sunfish-qd4a.200317.024.a1-44c42f0b.tgz",
     "sha256": "d47394ab981045679ea35eb507958ffd7af34345d29175873c0a88b958ec6df2"
   },
@@ -1290,6 +1346,14 @@
   {
     "url": "https://dl.google.com/dl/android/aosp/qcom-sunfish-sq3a.220705.003.a1-34e47090.tgz",
     "sha256": "8db79f0625bba83ac7162be1488311ae59b7d31085fdd64c49902d623429e542"
+  },
+  {
+    "url": "https://dl.google.com/dl/android/aosp/google_devices-sunfish-tp1a.220624.014-72659229.tgz",
+    "sha256": "5ab5acda40d1466812e7d093e64e6a26484a723ba2f4b1a1de212156651690d4"
+  },
+  {
+    "url": "https://dl.google.com/dl/android/aosp/qcom-sunfish-tp1a.220624.014-b4be347f.tgz",
+    "sha256": "4913bf4d91ac825a66856d292d7dc7e1956bea90aba86e600978c9d4a2ba0f7a"
   },
   {
     "url": "https://dl.google.com/dl/android/aosp/google_devices-coral-qd1a.190821.007-b27ff668.tgz",
@@ -1708,6 +1772,14 @@
     "sha256": "b314ff1fd2e8c2fd3c77698bf2bfba017baaff5f4dd192733d2c6b613e0afede"
   },
   {
+    "url": "https://dl.google.com/dl/android/aosp/google_devices-coral-tp1a.220624.014-d1e57e62.tgz",
+    "sha256": "789f0a352a3078d0bfbaec9a928a9ed92cbf6ef96c3464ffbd15d710baed191f"
+  },
+  {
+    "url": "https://dl.google.com/dl/android/aosp/qcom-coral-tp1a.220624.014-7a1059d3.tgz",
+    "sha256": "d17e2ec67286a496f9ab5cca17a5592fb665a0fd6c66af18aa6943954de7bd7f"
+  },
+  {
     "url": "https://dl.google.com/dl/android/aosp/google_devices-flame-qd1a.190821.007-2a6a603e.tgz",
     "sha256": "195edb3ee2fc16ed02dbb3270564b307a6dc000a9d748ea88f3778181d7dde1b"
   },
@@ -2122,6 +2194,14 @@
   {
     "url": "https://dl.google.com/dl/android/aosp/qcom-flame-sq3a.220705.003.a1-f11cbfb0.tgz",
     "sha256": "7a863b5231be43df346f8b1346233f18a7a9e02192dd23a61df0ed0ae925310d"
+  },
+  {
+    "url": "https://dl.google.com/dl/android/aosp/google_devices-flame-tp1a.220624.014-7a64d79d.tgz",
+    "sha256": "56a9b97af6defda8696d73deb707824acf22f69a47007373344e035de42e8f6a"
+  },
+  {
+    "url": "https://dl.google.com/dl/android/aosp/qcom-flame-tp1a.220624.014-edc2da61.tgz",
+    "sha256": "21c71069de4e3a27341d63bd7934541f7b83e8f805f82b8a9c865a63da00b749"
   },
   {
     "url": "https://dl.google.com/dl/android/aosp/google_devices-bonito-pd2a.190115.029-c43be085.tgz",
