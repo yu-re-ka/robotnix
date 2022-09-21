@@ -17,7 +17,10 @@ let
                     ++ (lib.optionals (config.androidVersion >= 10) [ "${config.device}/networkstack" ])
                     ++ (lib.optionals (config.androidVersion >= 11) [ "com.android.hotspot2.osulogin" "com.android.wifi.resources" ])
                     ++ (lib.optionals (config.androidVersion >= 12) [ "com.android.connectivity.resources" ])
-                    ++ (lib.optional config.signing.apex.enable config.signing.apex.packageNames)
+                    ++ (lib.optionals (config.androidVersion >= 13) [
+                          "com.android.adservices.api" "com.android.bluetooth" "com.android.safetycenter.resources"
+                          "com.android.nearby.halfsheet" "com.android.uwb.resources" "com.android.wifi.dialog"
+                    ]) ++ (lib.optional config.signing.apex.enable config.signing.apex.packageNames)
                     ++ (lib.mapAttrsToList
                         (name: prebuilt: prebuilt.certificate)
                         (lib.filterAttrs (name: prebuilt: prebuilt.enable && prebuilt.certificate != "PRESIGNED") config.apps.prebuilt))
@@ -181,6 +184,16 @@ in
         "packages/modules/Wifi/OsuLogin/certs/com.android.hotspot2.osulogin" = "com.android.hotspot2.osulogin";
         "packages/modules/Wifi/service/ServiceWifiResources/resources-certs/com.android.wifi.resources" = "com.android.wifi.resources";
         "packages/modules/Connectivity/service/ServiceConnectivityResources/resources-certs/com.android.connectivity.resources" = "com.android.connectivity.resources";
+      }
+# https://github.com/GrapheneOS/script/commit/dcc616a43754a05df94ae3cf29de71b491b12af6
+#     --extra_apks AdServicesApk.apk Bluetooth.apk HalfSheetUX.apk SafetyCenterResources.apk ServiceUwbResources.apk WifiDialog.apk="$KEY_DIR/releasekey" \
+      // lib.optionalAttrs (config.androidVersion >= 13) {
+        "packages/modules/AdServices/adservices/apk/com.android.adservices.api" = "com.android.adservices.api";                         # adServicesApk.apk
+        "packages/modules/Bluetooth/android/app/certs/com.android.bluetooth" = "com.android.bluetooth";                                 # Bluetooth.apk
+        "packages/modules/Permission/SafetyCenter/Resources/com.android.safetycenter.resources" = "com.android.safetycenter.resources"; # SafetyCenterResources.apk
+        "packages/modules/Connectivity/nearby/halfsheet/apk-certs/com.android.nearby.halfsheet" = "com.android.nearby.halfsheet";       # HalfSheetUX.apk
+        "packages/modules/Uwb/service/ServiceUwbResources/resources-certs/com.android.uwb.resources" = "com.android.uwb.resources";     # ServiceUwbResources.apk
+        "packages/modules/Wifi/WifiDialog/certs/com.android.wifi.dialog" = "com.android.wifi.dialog";                                   # WifiDialog.apk
       }
       # App-specific keys
       // lib.mapAttrs'
