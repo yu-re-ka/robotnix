@@ -44,11 +44,11 @@ let
       ./modules/12
       ./modules/13
       ./modules/9
-      ./modules/apps/auditor.nix
-      ./modules/apps/chromium.nix
-      ./modules/apps/fdroid.nix
+      #./modules/apps/auditor.nix
+      #./modules/apps/chromium.nix
+      #./modules/apps/fdroid.nix
       ./modules/apps/prebuilt.nix
-      ./modules/apps/seedvault.nix
+      #./modules/apps/seedvault.nix
       ./modules/apps/updater.nix
       ./modules/apv
       ./modules/adevtool.nix
@@ -68,7 +68,7 @@ let
       ./modules/resources.nix
       ./modules/signing.nix
       ./modules/source.nix
-      ./modules/webview.nix
+      #./modules/webview.nix
     ];
   });
 

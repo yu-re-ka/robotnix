@@ -113,7 +113,7 @@ in mkIf (config.flavor == "lineageos")
 
       # LineageOS will sometimes force-push to this repo, and the older revisions are garbage collected.
       # So we'll just build chromium webview ourselves.
-      "external/chromium-webview".enable = false;
+      #"external/chromium-webview".enable = false;
     }
   ] ++ optionals (deviceMetadata ? "${config.device}") [
     # Device-specific source dirs
@@ -140,19 +140,19 @@ in mkIf (config.flavor == "lineageos")
   source.manifest.rev = mkDefault "refs/heads/${LineageOSRelease}";
 
   # Enable robotnix-built chromium / webview
-  apps.chromium.enable = mkDefault true;
-  webview.chromium.availableByDefault = mkDefault true;
-  webview.chromium.enable = mkDefault true;
+  #apps.chromium.enable = mkDefault true;
+  #webview.chromium.availableByDefault = mkDefault true;
+  #webview.chromium.enable = mkDefault true;
 
   # This is the prebuilt webview apk from LineageOS. Adding this here is only
   # for convenience if the end-user wants to set `webview.prebuilt.enable = true;`.
-  webview.prebuilt.apk = config.source.dirs."external/chromium-webview".src + "/prebuilt/${config.arch}/webview.apk";
-  webview.prebuilt.availableByDefault = mkDefault true;
-  removedProductPackages = [ "webview" ];
+  #webview.prebuilt.apk = config.source.dirs."external/chromium-webview".src + "/prebuilt/${config.arch}/webview.apk";
+  #webview.prebuilt.availableByDefault = mkDefault true;
+  #removedProductPackages = [ "webview" ];
 
   apps.updater.flavor = mkDefault "lineageos";
   apps.updater.includedInFlavor = mkDefault true;
-  apps.seedvault.includedInFlavor = mkDefault true;
+  #apps.seedvault.includedInFlavor = mkDefault true;
   pixel.activeEdge.includedInFlavor = mkDefault true;
 
   # Needed by included kernel build for some devices (pioneer at least)
