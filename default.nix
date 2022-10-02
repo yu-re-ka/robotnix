@@ -59,6 +59,7 @@ let
       ./modules/etc.nix
       ./modules/framework.nix
       ./modules/hosts.nix
+      ./modules/security-pki.nix
       ./modules/kernel.nix
       ./modules/microg.nix
       ./modules/pixel
