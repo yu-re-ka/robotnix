@@ -34,13 +34,13 @@ in mkIf (config.flavor == "vanilla") (mkMerge [
 
   # This is the prebuilt webview apk from AOSP. It is very old and not enabled by default.
   # Enable using webview.prebuilt.enable = true;
-  webview.prebuilt.apk = config.source.dirs."external/chromium-webview".src + "/prebuilt/${config.arch}/webview.apk";
-  webview.prebuilt.availableByDefault = mkDefault true;
+  #webview.prebuilt.apk = config.source.dirs."external/chromium-webview".src + "/prebuilt/${config.arch}/webview.apk";
+  #webview.prebuilt.availableByDefault = mkDefault true;
 
   # Instead, we build our own chromium and webview
-  apps.chromium.enable = mkDefault true;
-  webview.chromium.availableByDefault = mkDefault true;
-  webview.chromium.enable = mkDefault true;
+  #apps.chromium.enable = mkDefault true;
+  #webview.chromium.availableByDefault = mkDefault true;
+  #webview.chromium.enable = mkDefault true;
 
   removedProductPackages = [ "webview" "Browser2" "QuickSearchBox" ];
   source.dirs."external/chromium-webview".enable = false;
