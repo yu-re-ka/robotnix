@@ -17,6 +17,9 @@ let
                     ++ (lib.optionals (config.androidVersion >= 10) [ "${config.device}/networkstack" ])
                     ++ (lib.optionals (config.androidVersion >= 11) [ "com.android.hotspot2.osulogin" "com.android.wifi.resources" ])
                     ++ (lib.optionals (config.androidVersion >= 12) [ "com.android.connectivity.resources" ])
+                    #++ (lib.optionals (config.androidVersion >= 13) [ "com.android.bluetooth" "com.android.adservices.api" "com.android.nearby.halfsheet" "com.android.safetycenter.resources" "com.android.uwb.resources" "com.android.wifi.dialog" ])
+                    ++ (lib.optionals (config.androidVersion >= 13) [ "${config.device}/bluetooth" ])
+                    ++ (lib.optionals (config.androidVersion >= 13) [ "${config.device}/sdk_sandbox" ])
                     ++ (lib.optional config.signing.apex.enable config.signing.apex.packageNames)
                     ++ (lib.mapAttrsToList
                         (name: prebuilt: prebuilt.certificate)
@@ -181,6 +184,10 @@ in
         "packages/modules/Wifi/OsuLogin/certs/com.android.hotspot2.osulogin" = "com.android.hotspot2.osulogin";
         "packages/modules/Wifi/service/ServiceWifiResources/resources-certs/com.android.wifi.resources" = "com.android.wifi.resources";
         "packages/modules/Connectivity/service/ServiceConnectivityResources/resources-certs/com.android.connectivity.resources" = "com.android.connectivity.resources";
+      }
+      // lib.optionalAttrs (config.androidVersion >= 13) {
+        "build/make/target/product/security/bluetooth" = "${config.device}/bluetooth";
+        "build/make/target/product/security/sdk_sandbox" = "${config.device}/sdk_sandbox";
       }
       # App-specific keys
       // lib.mapAttrs'

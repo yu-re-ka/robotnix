@@ -31,9 +31,9 @@ in mkIf (config.flavor == "grapheneos") (mkMerge [
   adevtool.enable = mkIf (elem config.deviceFamily phoneDeviceFamilies) (mkDefault true);
   adevtool.stateFile = "${config.source.dirs."vendor/state".src}/${config.device}.json";
   apv.buildID = mkDefault (
-    if (elem config.device [ "coral" "flame" "sunfish" "bramble" "redfin" "barbet" ]) then "TP1A.220624.014"
-    else if (elem config.device [ "raven" "oriole" ]) then "TP1A.220624.021"
-    else "TP1A.220624.021.A1"
+    if (elem config.device [ "coral" "flame" "sunfish" "bramble" "redfin" "barbet" ]) then "TP1A.220905.004"
+    else if (elem config.device [ "oriole" "raven" ]) then "TP1A.220905.004.A1"
+    else "TP1A.220905.004.A2"
   );
 
   # Not strictly necessary for me to set these, since I override the source.dirs above
@@ -118,7 +118,17 @@ in mkIf (config.flavor == "grapheneos") (mkMerge [
   signing.apex.enable = false;
 
   # Extra packages that should use releasekey
-  signing.signTargetFilesArgs = [ "--extra_apks OsuLogin.apk,ServiceWifiResources.apk=$KEYSDIR/${config.device}/releasekey" ];
+  signing.signTargetFilesArgs = [
+    "--extra_apks AdServicesApk.apk=$KEYSDIR/${config.device}/releasekey"
+    "--extra_apks Bluetooth.apk=$KEYSDIR/${config.device}/bluetooth"
+    "--extra_apks HalfSheetUX.apk=$KEYSDIR/${config.device}/releasekey"
+    "--extra_apks OsuLogin.apk=$KEYSDIR/${config.device}/releasekey"
+    "--extra_apks SafetyCenterResources.apk=$KEYSDIR/${config.device}/releasekey"
+    "--extra_apks ServiceConnectivityResources.apk=$KEYSDIR/${config.device}/releasekey"
+    "--extra_apks ServiceUwbResources.apk=$KEYSDIR/${config.device}/releasekey"
+    "--extra_apks ServiceWifiResources.apk=$KEYSDIR/${config.device}/releasekey"
+    "--extra_apks WifiDialog.apk=$KEYSDIR/${config.device}/releasekey"
+  ];
 
   # Leave the existing auditor in the build--just in case the user wants to
   # audit devices running the official upstream build

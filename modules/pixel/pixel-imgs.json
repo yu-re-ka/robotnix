@@ -198,6 +198,12 @@
     "sha256": "4bd6cec7b3dc2bd384ae5d1e19e2b66286a051d47811fb0dbb72a84804c98ef3"
   },
   {
+    "device": "oriole",
+    "version": "13.0.0 (TP1A.220905.004, Sep 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/oriole-tp1a.220905.004-factory-b7d576f5.zip",
+    "sha256": "b7d576f50b9e27b753c18a9ed70669d9cbd212bb01db121de959d48cfe448e67"
+  },
+  {
     "device": "raven",
     "version": "12.0.0 (SD1A.210817.015.A4, Oct 2021)",
     "url": "https://dl.google.com/dl/android/aosp/raven-sd1a.210817.015.a4-factory-bd6cb030.zip",
@@ -342,6 +348,12 @@
     "sha256": "d8ddfdca3af0b97b3b99460afdab3cf95a741f988dccd5122564c855a64baa36"
   },
   {
+    "device": "raven",
+    "version": "13.0.0 (TP1A.220905.004, Sep 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/raven-tp1a.220905.004-factory-4dba4ced.zip",
+    "sha256": "4dba4ced0ea829e3d334dee55d8b15daa4cd1b57848417a8787d68a0b6ce3793"
+  },
+  {
     "device": "barbet",
     "version": "11.0.0 (RD2A.210605.006, Jun 2021, JP carriers)",
     "url": "https://dl.google.com/dl/android/aosp/barbet-rd2a.210605.006-factory-619b07d2.zip",
@@ -454,6 +466,12 @@
     "version": "13.0.0 (TP1A.220624.014, Aug 2022)",
     "url": "https://dl.google.com/dl/android/aosp/barbet-tp1a.220624.014-factory-af1f224f.zip",
     "sha256": "af1f224fccb523213b1e0a55596d9e32ed2b10bc3e37d092bdde643b48757209"
+  },
+  {
+    "device": "barbet",
+    "version": "13.0.0 (TP1A.220905.004, Sep 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/barbet-tp1a.220905.004-factory-3a769d44.zip",
+    "sha256": "3a769d44e663bd6dc536f5399fffe8071e6cd9f18e075626b9490725ab1dcafb"
   },
   {
     "device": "redfin",
@@ -702,6 +720,12 @@
     "sha256": "ff1cdae9ae79f6c5d6941ec149cfdedc60133e03cc6ae15bdeeff28b8198ee75"
   },
   {
+    "device": "redfin",
+    "version": "13.0.0 (TP1A.220905.004, Sep 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/redfin-tp1a.220905.004-factory-99596a8d.zip",
+    "sha256": "99596a8d6da36a97403cc2f2f652cca9a267194141dd381766cf60fa9fd1bbbd"
+  },
+  {
     "device": "bramble",
     "version": "11.0.0 (RD1A.200810.020, Oct 2020, AU &amp; JP carriers)",
     "url": "https://dl.google.com/dl/android/aosp/bramble-rd1a.200810.020-factory-97d5c03f.zip",
@@ -942,6 +966,12 @@
     "sha256": "2969e15279c46057b38740c40805bb7a9493dc25a4f8d3f1030dff5319268cf9"
   },
   {
+    "device": "bramble",
+    "version": "13.0.0 (TP1A.220905.004, Sep 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/bramble-tp1a.220905.004-factory-48ff8061.zip",
+    "sha256": "48ff8061f5f45bc6ea59ea5652d28b0fe64e1301b549b3d28418f5dd5e517905"
+  },
+  {
     "device": "sunfish",
     "version": "10.0.0 (QD4A.200317.024.A1, May 2020, JP carriers and Verizon)",
     "url": "https://dl.google.com/dl/android/aosp/sunfish-qd4a.200317.024.a1-factory-2e462cf3.zip",
@@ -1144,6 +1174,12 @@
     "version": "13.0.0 (TP1A.220624.014, Aug 2022)",
     "url": "https://dl.google.com/dl/android/aosp/sunfish-tp1a.220624.014-factory-0d658770.zip",
     "sha256": "0d6587706e00f53da15255d36c8a9306c144de6a2c05af0dc6304e9b73de82fe"
+  },
+  {
+    "device": "sunfish",
+    "version": "13.0.0 (TP1A.220905.004, Sep 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/sunfish-tp1a.220905.004-factory-b55d9ef4.zip",
+    "sha256": "b55d9ef42e487dc1cf787e24abe402d6083ca3e785a7eecf4b90fd42ea9f1d9f"
   },
   {
     "device": "coral",
@@ -1464,6 +1500,12 @@
     "sha256": "8f60813e670c146e880226d9b04f7a92229c06cb89351a17f60ea2b94c06e58a"
   },
   {
+    "device": "coral",
+    "version": "13.0.0 (TP1A.220905.004, Sep 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/coral-tp1a.220905.004-factory-8e79a64d.zip",
+    "sha256": "8e79a64da5e92a9b8bc071e9e0a811ba6ed918582680a2fdb4f9c7271a3ff1a5"
+  },
+  {
     "device": "flame",
     "version": "10.0.0 (QD1A.190821.007, Oct 2019)",
     "url": "https://dl.google.com/dl/android/aosp/flame-qd1a.190821.007-factory-04b0499d.zip",
@@ -1782,6 +1824,12 @@
     "sha256": "7b8f6f73aeee25aff2e641feff41d826cfb99f2ad7d186b6843b5dfaddcdedb4"
   },
   {
+    "device": "flame",
+    "version": "13.0.0 (TP1A.220905.004, Sep 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/flame-tp1a.220905.004-factory-d3d046c8.zip",
+    "sha256": "d3d046c81803d74bb7327a99a8e66884256f2853fb14c2f555a2f7719a6961f8"
+  },
+  {
     "device": "bonito",
     "version": "9.0.0 (PD2A.190115.029, Mar 2019)",
     "url": "https://dl.google.com/dl/android/aosp/bonito-pd2a.190115.029-factory-aac5b874.zip",
@@ -2058,6 +2106,12 @@
     "sha256": "5adf23171f3efd561b8b9394d4e167e70e821d768ac6f753d0091996804ea37e"
   },
   {
+    "device": "bonito",
+    "version": "12.1.0 (SP2A.220505.008, Sep 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/bonito-sp2a.220505.008-factory-db19d2aa.zip",
+    "sha256": "db19d2aaff36f29b7f58f11acad856f9382dafa1ae9160a692782e27cd7b0002"
+  },
+  {
     "device": "sargo",
     "version": "9.0.0 (PD2A.190115.029, Mar 2019)",
     "url": "https://dl.google.com/dl/android/aosp/sargo-pd2a.190115.029-factory-b05c97da.zip",
@@ -2332,6 +2386,12 @@
     "version": "12.1.0 (SP2A.220505.006, May 2022)",
     "url": "https://dl.google.com/dl/android/aosp/sargo-sp2a.220505.006-factory-978959e1.zip",
     "sha256": "978959e1abaa1d39d2a26eafeebae69e90f6a82bcc214750f40e73bebed24767"
+  },
+  {
+    "device": "sargo",
+    "version": "12.1.0 (SP2A.220505.008, Sep 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/sargo-sp2a.220505.008-factory-071e368a.zip",
+    "sha256": "071e368a127ce5a3c553f8b717895eaf1e44dec78971dc4c80baa7237d2d37f1"
   },
   {
     "device": "crosshatch",
