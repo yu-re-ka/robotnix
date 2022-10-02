@@ -1077,82 +1077,6 @@ so special SELinux domains are correctly assigned.</p>
 <p><em>Type</em>: signed integer</p>
 <p><em>Declared by</em>:
 <a href="https://github.com/danielfullmer/robotnix/blob/master/modules/base.nix">modules/base.nix</a></p>
-<h3 id="appsauditordomain"><a class="header" href="#appsauditordomain"><code>apps.auditor.domain</code></a></h3>
-<p>Domain running the AttestationServer (over HTTPS) for remote verification</p>
-<p><em>Example</em>: <code>&quot;attestation.example.com&quot;</code></p>
-<p><em>Type</em>: string</p>
-<p><em>Declared by</em>:
-<a href="https://github.com/danielfullmer/robotnix/blob/master/modules/apps/auditor.nix">modules/apps/auditor.nix</a></p>
-<h3 id="appsauditorenable"><a class="header" href="#appsauditorenable"><code>apps.auditor.enable</code></a></h3>
-<p>Whether to enable Auditor.</p>
-<p><em>Default</em>: <code>false</code></p>
-<p><em>Example</em>: <code>true</code></p>
-<p><em>Type</em>: boolean</p>
-<p><em>Declared by</em>:
-<a href="https://github.com/danielfullmer/robotnix/blob/master/modules/apps/auditor.nix">modules/apps/auditor.nix</a></p>
-<h3 id="appsbromiteenable"><a class="header" href="#appsbromiteenable"><code>apps.bromite.enable</code></a></h3>
-<p>Whether to enable bromite browser.</p>
-<p><em>Default</em>: <code>false</code></p>
-<p><em>Example</em>: <code>true</code></p>
-<p><em>Type</em>: boolean</p>
-<p><em>Declared by</em>:
-<a href="https://github.com/danielfullmer/robotnix/blob/master/modules/apps/chromium.nix">modules/apps/chromium.nix</a></p>
-<h3 id="appschromiumenable"><a class="header" href="#appschromiumenable"><code>apps.chromium.enable</code></a></h3>
-<p>Whether to enable chromium browser.</p>
-<p><em>Default</em>: <code>false</code></p>
-<p><em>Example</em>: <code>true</code></p>
-<p><em>Type</em>: boolean</p>
-<p><em>Declared by</em>:
-<a href="https://github.com/danielfullmer/robotnix/blob/master/modules/apps/chromium.nix">modules/apps/chromium.nix</a></p>
-<h3 id="appsfdroidadditionalrepos"><a class="header" href="#appsfdroidadditionalrepos"><code>apps.fdroid.additionalRepos</code></a></h3>
-<p>Additional F-Droid repositories to include in the default build.
-Note that changes to this setting will only take effect on a freshly
-installed device--or if the F-Droid storage is cleared.</p>
-<p><em>Default</em>: <code>{ }</code></p>
-<p><em>Type</em>: attribute set of submodule</p>
-<p><em>Declared by</em>:
-<a href="https://github.com/danielfullmer/robotnix/blob/master/modules/apps/fdroid.nix">modules/apps/fdroid.nix</a></p>
-<h3 id="appsfdroidadditionalreposnamedescription"><a class="header" href="#appsfdroidadditionalreposnamedescription"><code>apps.fdroid.additionalRepos.&lt;name&gt;.description</code></a></h3>
-<p>Longer textual description of this repository</p>
-<p><em>Default</em>: <code>&quot;Empty description&quot;</code></p>
-<p><em>Type</em>: string</p>
-<p><em>Declared by</em>:
-<a href="https://github.com/danielfullmer/robotnix/blob/master/modules/apps/fdroid.nix">modules/apps/fdroid.nix</a></p>
-<h3 id="appsfdroidadditionalreposnameenable"><a class="header" href="#appsfdroidadditionalreposnameenable"><code>apps.fdroid.additionalRepos.&lt;name&gt;.enable</code></a></h3>
-<p>Whether to enable this repository by default in F-Droid.</p>
-<p><em>Default</em>: <code>false</code></p>
-<p><em>Type</em>: boolean</p>
-<p><em>Declared by</em>:
-<a href="https://github.com/danielfullmer/robotnix/blob/master/modules/apps/fdroid.nix">modules/apps/fdroid.nix</a></p>
-<h3 id="appsfdroidadditionalreposnamename"><a class="header" href="#appsfdroidadditionalreposnamename"><code>apps.fdroid.additionalRepos.&lt;name&gt;.name</code></a></h3>
-<p>Display name to use for this repository</p>
-<p><em>Default</em>: <code>&quot;‹name›&quot;</code></p>
-<p><em>Type</em>: string</p>
-<p><em>Declared by</em>:
-<a href="https://github.com/danielfullmer/robotnix/blob/master/modules/apps/fdroid.nix">modules/apps/fdroid.nix</a></p>
-<h3 id="appsfdroidadditionalreposnamepubkey"><a class="header" href="#appsfdroidadditionalreposnamepubkey"><code>apps.fdroid.additionalRepos.&lt;name&gt;.pubkey</code></a></h3>
-<p>Public key associated with this repository. Can be found in <code>/index.xml</code> under the repo URL.</p>
-<p><em>Type</em>: string</p>
-<p><em>Declared by</em>:
-<a href="https://github.com/danielfullmer/robotnix/blob/master/modules/apps/fdroid.nix">modules/apps/fdroid.nix</a></p>
-<h3 id="appsfdroidadditionalreposnamepushrequests"><a class="header" href="#appsfdroidadditionalreposnamepushrequests"><code>apps.fdroid.additionalRepos.&lt;name&gt;.pushRequests</code></a></h3>
-<p>Allow this repository to specify apps which should be automatically installed/uninstalled</p>
-<p><em>Default</em>: <code>&quot;ignore&quot;</code></p>
-<p><em>Type</em>: one of &quot;ignore&quot;, &quot;prompt&quot;, &quot;always&quot;</p>
-<p><em>Declared by</em>:
-<a href="https://github.com/danielfullmer/robotnix/blob/master/modules/apps/fdroid.nix">modules/apps/fdroid.nix</a></p>
-<h3 id="appsfdroidadditionalreposnameurl"><a class="header" href="#appsfdroidadditionalreposnameurl"><code>apps.fdroid.additionalRepos.&lt;name&gt;.url</code></a></h3>
-<p>URL for F-Droid repository</p>
-<p><em>Type</em>: string</p>
-<p><em>Declared by</em>:
-<a href="https://github.com/danielfullmer/robotnix/blob/master/modules/apps/fdroid.nix">modules/apps/fdroid.nix</a></p>
-<h3 id="appsfdroidenable"><a class="header" href="#appsfdroidenable"><code>apps.fdroid.enable</code></a></h3>
-<p>Whether to enable F-Droid.</p>
-<p><em>Default</em>: <code>false</code></p>
-<p><em>Example</em>: <code>true</code></p>
-<p><em>Type</em>: boolean</p>
-<p><em>Declared by</em>:
-<a href="https://github.com/danielfullmer/robotnix/blob/master/modules/apps/fdroid.nix">modules/apps/fdroid.nix</a></p>
 <h3 id="appsprebuilt"><a class="header" href="#appsprebuilt"><code>apps.prebuilt</code></a></h3>
 <p>Prebuilt APKs to include in the robotnix build</p>
 <p><em>Default</em>: <code>{ }</code></p>
@@ -1246,13 +1170,6 @@ Refer to this <a href="https://developer.android.com/reference/android/Manifest.
 <p><em>Type</em>: list of string</p>
 <p><em>Declared by</em>:
 <a href="https://github.com/danielfullmer/robotnix/blob/master/modules/apps/prebuilt.nix">modules/apps/prebuilt.nix</a></p>
-<h3 id="appsseedvaultenable"><a class="header" href="#appsseedvaultenable"><code>apps.seedvault.enable</code></a></h3>
-<p>Whether to enable Seedvault (backup).</p>
-<p><em>Default</em>: <code>false</code></p>
-<p><em>Example</em>: <code>true</code></p>
-<p><em>Type</em>: boolean</p>
-<p><em>Declared by</em>:
-<a href="https://github.com/danielfullmer/robotnix/blob/master/modules/apps/seedvault.nix">modules/apps/seedvault.nix</a></p>
 <h3 id="appsupdaterenable"><a class="header" href="#appsupdaterenable"><code>apps.updater.enable</code></a></h3>
 <p>Whether to enable OTA Updater.</p>
 <p><em>Default</em>: <code>false</code></p>
@@ -1271,13 +1188,6 @@ Refer to this <a href="https://developer.android.com/reference/android/Manifest.
 <p><em>Type</em>: string</p>
 <p><em>Declared by</em>:
 <a href="https://github.com/danielfullmer/robotnix/blob/master/modules/apps/updater.nix">modules/apps/updater.nix</a></p>
-<h3 id="appsvanadiumenable"><a class="header" href="#appsvanadiumenable"><code>apps.vanadium.enable</code></a></h3>
-<p>Whether to enable vanadium browser.</p>
-<p><em>Default</em>: <code>false</code></p>
-<p><em>Example</em>: <code>true</code></p>
-<p><em>Type</em>: boolean</p>
-<p><em>Declared by</em>:
-<a href="https://github.com/danielfullmer/robotnix/blob/master/modules/apps/chromium.nix">modules/apps/chromium.nix</a></p>
 <h3 id="apvbuildid"><a class="header" href="#apvbuildid"><code>apv.buildID</code></a></h3>
 <p>Build ID associated with the upstream img/ota (used to select images)</p>
 <p><em>Type</em>: string</p>
@@ -1663,54 +1573,6 @@ Also enables use of <code>builtins.fetchGit</code> instead of <code>pkgs.fetchgi
 <p><em>Type</em>: list of string</p>
 <p><em>Declared by</em>:
 <a href="https://github.com/danielfullmer/robotnix/blob/master/modules/base.nix">modules/base.nix</a></p>
-<h3 id="webview"><a class="header" href="#webview"><code>webview</code></a></h3>
-<p>Webview providers to include in Android build. Pre-specified options are <code>chromium</code>, <code>bromite</code>, and <code>vanadium</code>.</p>
-<p><em>Example</em>: <code>{&quot;_type&quot;:&quot;literalExpression&quot;,&quot;text&quot;:&quot;{ bromite.enable = true; }&quot;}</code></p>
-<p><em>Type</em>: attribute set of submodule</p>
-<p><em>Declared by</em>:
-<a href="https://github.com/danielfullmer/robotnix/blob/master/modules/webview.nix">modules/webview.nix</a></p>
-<h3 id="webviewnameapk"><a class="header" href="#webviewnameapk"><code>webview.&lt;name&gt;.apk</code></a></h3>
-<p>APK file containing webview package.</p>
-<p><em>Type</em>: path</p>
-<p><em>Declared by</em>:
-<a href="https://github.com/danielfullmer/robotnix/blob/master/modules/webview.nix">modules/webview.nix</a></p>
-<h3 id="webviewnameavailablebydefault"><a class="header" href="#webviewnameavailablebydefault"><code>webview.&lt;name&gt;.availableByDefault</code></a></h3>
-<p>If <code>true</code>, this provider can be automatically selected by the
-framework, if it's the first valid choice. If <code>false</code>, this
-provider will only be used if the user selects it themselves from
-the developer settings menu.</p>
-<p><em>Default</em>: <code>false</code></p>
-<p><em>Type</em>: boolean</p>
-<p><em>Declared by</em>:
-<a href="https://github.com/danielfullmer/robotnix/blob/master/modules/webview.nix">modules/webview.nix</a></p>
-<h3 id="webviewnamedescription"><a class="header" href="#webviewnamedescription"><code>webview.&lt;name&gt;.description</code></a></h3>
-<p>The name shown to the user in the developer settings menu.</p>
-<p><em>Default</em>: <code>&quot;Android System WebView&quot;</code></p>
-<p><em>Type</em>: string</p>
-<p><em>Declared by</em>:
-<a href="https://github.com/danielfullmer/robotnix/blob/master/modules/webview.nix">modules/webview.nix</a></p>
-<h3 id="webviewnameenable"><a class="header" href="#webviewnameenable"><code>webview.&lt;name&gt;.enable</code></a></h3>
-<p>Whether to enable ‹name› webview.</p>
-<p><em>Default</em>: <code>false</code></p>
-<p><em>Example</em>: <code>true</code></p>
-<p><em>Type</em>: boolean</p>
-<p><em>Declared by</em>:
-<a href="https://github.com/danielfullmer/robotnix/blob/master/modules/webview.nix">modules/webview.nix</a></p>
-<h3 id="webviewnameisfallback"><a class="header" href="#webviewnameisfallback"><code>webview.&lt;name&gt;.isFallback</code></a></h3>
-<p>If <code>true</code>, this provider will be automatically disabled by the
-framework, preventing it from being used or updated by app
-stores, unless there is no other valid provider available.  Only
-one provider can be a fallback.</p>
-<p><em>Default</em>: <code>false</code></p>
-<p><em>Type</em>: boolean</p>
-<p><em>Declared by</em>:
-<a href="https://github.com/danielfullmer/robotnix/blob/master/modules/webview.nix">modules/webview.nix</a></p>
-<h3 id="webviewnamepackagename"><a class="header" href="#webviewnamepackagename"><code>webview.&lt;name&gt;.packageName</code></a></h3>
-<p>The Android package name of the APK.</p>
-<p><em>Default</em>: <code>&quot;com.android.webview&quot;</code></p>
-<p><em>Type</em>: string</p>
-<p><em>Declared by</em>:
-<a href="https://github.com/danielfullmer/robotnix/blob/master/modules/webview.nix">modules/webview.nix</a></p>
 
                     </main>
 
