@@ -54,6 +54,18 @@
     "sha256": "4a2a794fabb12b265e1aeeba4bcd07fce77b5e8427a73b1837caf9f1257f0170"
   },
   {
+    "device": "bluejay",
+    "version": "13.0.0 (TP1A.220905.004.A2, Sep 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/bluejay-tp1a.220905.004.a2-factory-bcfb549e.zip",
+    "sha256": "bcfb549e7ad1bbaa208aaea9c248635023296a8b2e0b1dca3b36cc7912b7b18c"
+  },
+  {
+    "device": "bluejay",
+    "version": "13.0.0 (TP1A.221005.003, Oct 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/bluejay-tp1a.221005.003-factory-79e6bc1a.zip",
+    "sha256": "79e6bc1a7b7084ae2e3a8d4eddd49ac943476ad55f0254a9902658432576264c"
+  },
+  {
     "device": "oriole",
     "version": "12.0.0 (SD1A.210817.015.A4, Oct 2021)",
     "url": "https://dl.google.com/dl/android/aosp/oriole-sd1a.210817.015.a4-factory-074b7f51.zip",
@@ -202,6 +214,18 @@
     "version": "13.0.0 (TP1A.220905.004, Sep 2022)",
     "url": "https://dl.google.com/dl/android/aosp/oriole-tp1a.220905.004-factory-b7d576f5.zip",
     "sha256": "b7d576f50b9e27b753c18a9ed70669d9cbd212bb01db121de959d48cfe448e67"
+  },
+  {
+    "device": "oriole",
+    "version": "13.0.0 (TP1A.220905.004.A1, Sep 2022, Verizon, Verizon MVNOs)",
+    "url": "https://dl.google.com/dl/android/aosp/oriole-tp1a.220905.004.a1-factory-8b8585b2.zip",
+    "sha256": "8b8585b24193e41f7f1480cef89311a912a751d4e60b6cac97264fe8fd6dcc4b"
+  },
+  {
+    "device": "oriole",
+    "version": "13.0.0 (TP1A.221005.002, Oct 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/oriole-tp1a.221005.002-factory-f28b656e.zip",
+    "sha256": "f28b656e29b6652f8bbdc0bfad1207495eb4a8cc39e25c872683f3abab660e4e"
   },
   {
     "device": "raven",
@@ -354,6 +378,18 @@
     "sha256": "4dba4ced0ea829e3d334dee55d8b15daa4cd1b57848417a8787d68a0b6ce3793"
   },
   {
+    "device": "raven",
+    "version": "13.0.0 (TP1A.220905.004.A1, Sep 2022, Verizon, Verizon MVNOs)",
+    "url": "https://dl.google.com/dl/android/aosp/raven-tp1a.220905.004.a1-factory-5e431fe5.zip",
+    "sha256": "5e431fe5b488b48c4543a22f18356d1ad45c04fdab07bfe451ca13bdf08d0039"
+  },
+  {
+    "device": "raven",
+    "version": "13.0.0 (TP1A.221005.002, Oct 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/raven-tp1a.221005.002-factory-d61dff29.zip",
+    "sha256": "d61dff29d5c9ba513a959d1b87be08df59432c7c0dc17092ab462d12492adfd5"
+  },
+  {
     "device": "barbet",
     "version": "11.0.0 (RD2A.210605.006, Jun 2021, JP carriers)",
     "url": "https://dl.google.com/dl/android/aosp/barbet-rd2a.210605.006-factory-619b07d2.zip",
@@ -472,6 +508,12 @@
     "version": "13.0.0 (TP1A.220905.004, Sep 2022)",
     "url": "https://dl.google.com/dl/android/aosp/barbet-tp1a.220905.004-factory-3a769d44.zip",
     "sha256": "3a769d44e663bd6dc536f5399fffe8071e6cd9f18e075626b9490725ab1dcafb"
+  },
+  {
+    "device": "barbet",
+    "version": "13.0.0 (TP1A.221005.002, Oct 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/barbet-tp1a.221005.002-factory-9c196e4a.zip",
+    "sha256": "9c196e4a8a50eb44bcfb5bb7f26f7332e808def1ebf0b64270ae4e12ed11b8fc"
   },
   {
     "device": "redfin",
@@ -726,6 +768,12 @@
     "sha256": "99596a8d6da36a97403cc2f2f652cca9a267194141dd381766cf60fa9fd1bbbd"
   },
   {
+    "device": "redfin",
+    "version": "13.0.0 (TP1A.221005.002, Oct 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/redfin-tp1a.221005.002-factory-3c13ab73.zip",
+    "sha256": "3c13ab73f19b35b83793b5cb1ca0dc240814715de9dafe799e68ac11f4b58b6c"
+  },
+  {
     "device": "bramble",
     "version": "11.0.0 (RD1A.200810.020, Oct 2020, AU &amp; JP carriers)",
     "url": "https://dl.google.com/dl/android/aosp/bramble-rd1a.200810.020-factory-97d5c03f.zip",
@@ -972,6 +1020,12 @@
     "sha256": "48ff8061f5f45bc6ea59ea5652d28b0fe64e1301b549b3d28418f5dd5e517905"
   },
   {
+    "device": "bramble",
+    "version": "13.0.0 (TP1A.221005.002, Oct 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/bramble-tp1a.221005.002-factory-c0df5be9.zip",
+    "sha256": "c0df5be9a8f7c14d202e74f1806c4354cf653aa4583d7d3afa0b1fd040a61a5b"
+  },
+  {
     "device": "sunfish",
     "version": "10.0.0 (QD4A.200317.024.A1, May 2020, JP carriers and Verizon)",
     "url": "https://dl.google.com/dl/android/aosp/sunfish-qd4a.200317.024.a1-factory-2e462cf3.zip",
@@ -1180,6 +1234,12 @@
     "version": "13.0.0 (TP1A.220905.004, Sep 2022)",
     "url": "https://dl.google.com/dl/android/aosp/sunfish-tp1a.220905.004-factory-b55d9ef4.zip",
     "sha256": "b55d9ef42e487dc1cf787e24abe402d6083ca3e785a7eecf4b90fd42ea9f1d9f"
+  },
+  {
+    "device": "sunfish",
+    "version": "13.0.0 (TP1A.221005.002, Oct 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/sunfish-tp1a.221005.002-factory-ce14ad3c.zip",
+    "sha256": "ce14ad3cb569d75b9db381ca075fee374bc7f72b7c3c65a6c01f23fec9794361"
   },
   {
     "device": "coral",
@@ -1506,6 +1566,12 @@
     "sha256": "8e79a64da5e92a9b8bc071e9e0a811ba6ed918582680a2fdb4f9c7271a3ff1a5"
   },
   {
+    "device": "coral",
+    "version": "13.0.0 (TP1A.221005.002, Oct 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/coral-tp1a.221005.002-factory-e70c4640.zip",
+    "sha256": "e70c4640478599d0068120051862a66315a028b346c5c268462f7ab164f5ec7c"
+  },
+  {
     "device": "flame",
     "version": "10.0.0 (QD1A.190821.007, Oct 2019)",
     "url": "https://dl.google.com/dl/android/aosp/flame-qd1a.190821.007-factory-04b0499d.zip",
@@ -1828,6 +1894,12 @@
     "version": "13.0.0 (TP1A.220905.004, Sep 2022)",
     "url": "https://dl.google.com/dl/android/aosp/flame-tp1a.220905.004-factory-d3d046c8.zip",
     "sha256": "d3d046c81803d74bb7327a99a8e66884256f2853fb14c2f555a2f7719a6961f8"
+  },
+  {
+    "device": "flame",
+    "version": "13.0.0 (TP1A.221005.002, Oct 2022)",
+    "url": "https://dl.google.com/dl/android/aosp/flame-tp1a.221005.002-factory-f91d46b5.zip",
+    "sha256": "f91d46b51e2e7a83c75f5d8655717d938def82a89f6ce87db5cfd0ac4bca8cc4"
   },
   {
     "device": "bonito",
