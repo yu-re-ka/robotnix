@@ -31,9 +31,8 @@ in mkIf (config.flavor == "grapheneos") (mkMerge [
   adevtool.enable = mkIf (elem config.deviceFamily phoneDeviceFamilies) (mkDefault true);
   adevtool.stateFile = "${config.source.dirs."vendor/state".src}/${config.device}.json";
   apv.buildID = mkDefault (
-    if (elem config.device [ "coral" "flame" "sunfish" "bramble" "redfin" "barbet" ]) then "TP1A.220905.004"
-    else if (elem config.device [ "oriole" "raven" ]) then "TP1A.220905.004.A1"
-    else "TP1A.220905.004.A2"
+    if (elem config.device [ "coral" "flame" "sunfish" "bramble" "redfin" "barbet" "oriole" "raven" ]) then "TP1A.221005.002"
+    else "TP1A.221005.003"
   );
 
   # Not strictly necessary for me to set these, since I override the source.dirs above
