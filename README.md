@@ -3,6 +3,12 @@ SPDX-FileCopyrightText: 2020 Daniel Fullmer and robotnix contributors
 SPDX-License-Identifier: MIT
 -->
 
+# Note on Fork
+
+This fork provides an up-to-date version of GrapheneOS.
+It has also been updated to work a more recent nixpkgs version and get rid of python2.
+However, many other Robotnix features are broken: The other flavors (Vanilla, LineageOS) and many of the modules (microG, F-Droid, source-built chromium and webview).
+
 # robotnix - Build Android (AOSP) using Nix
 
 Robotnix enables a user to easily and reliably build Android (AOSP) images using the Nix package manager / build tool.
