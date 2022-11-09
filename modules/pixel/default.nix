@@ -35,6 +35,8 @@ let
     raven = { family = "raviole"; name = "Pixel 6 Pro"; };
     oriole = { family = "raviole"; name = "Pixel 6"; };
     bluejay = { family = "raviole"; name = "Pixel 6a"; };
+    panther = { family = "pantah"; name = "Pixel 7"; };
+    cheetah = { family = "pantah"; name = "Pixel 7 Pro"; };
   };
 
   adevtoolStateFileMap = {
