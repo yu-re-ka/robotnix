@@ -1,0 +1,28 @@
+diff --git a/microdroid/Android.bp b/microdroid/Android.bp
+index 3be7eaad..d2bd7e00 100644
+--- a/microdroid/Android.bp
++++ b/microdroid/Android.bp
+@@ -410,6 +410,7 @@ genrule {
+     ],
+     out: ["microdroid_bootconfig.normal"],
+     cmd: "cp $(location bootconfig.normal) $(out) && " +
++        "chmod u+w $(out) &&" +
+         "$(location avbtool) add_hash_footer " +
+         "--algorithm SHA256_RSA4096 " +
+         "--partition_name bootconfig " +
+@@ -427,6 +428,7 @@ genrule {
+     ],
+     out: ["microdroid_bootconfig.app_debuggable"],
+     cmd: "cp $(location bootconfig.app_debuggable) $(out) && " +
++        "chmod u+w $(out) &&" +
+         "$(location avbtool) add_hash_footer " +
+         "--algorithm SHA256_RSA4096 " +
+         "--partition_name bootconfig " +
+@@ -444,6 +446,7 @@ genrule {
+     ],
+     out: ["microdroid_bootconfig.full_debuggable"],
+     cmd: "cp $(location bootconfig.full_debuggable) $(out) && " +
++        "chmod u+w $(out) &&" +
+         "$(location avbtool) add_hash_footer " +
+         "--algorithm SHA256_RSA4096 " +
+         "--partition_name bootconfig " +
