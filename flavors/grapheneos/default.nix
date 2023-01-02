@@ -33,7 +33,7 @@ in mkIf (config.flavor == "grapheneos") (mkMerge [
   apv.buildID = mkDefault (
     if (elem config.device [ "coral" "flame" ]) then "TP1A.221005.002"
     else if (elem config.device [ "panther" "cheetah" ]) then "TD1A.221105.001"
-    else "TP1A.221105.002"
+    else "TQ1A.221205.011"
   );
 
   # Not strictly necessary for me to set these, since I override the source.dirs above
